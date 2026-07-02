@@ -11,11 +11,11 @@ int main() {
     
 
     // Output the values of the variables
-    cout << "Name: " << name << endl;
+    cout << "Name: " << name << endl; // endl is used to insert a newline character
     cout << "Age: " << age << endl;
     cout << "Height: " << height << endl;
     cout << "Grade: " << grade << endl;
     cout << "Is Student: " << (isStudent ? "Yes" : "No") << endl;
-    
     return 0;
 }
+
