@@ -113,3 +113,34 @@ if sum==arms_num:
     print(f"{arms_num} is an Armstrong number.")
 else:
     print(f"{arms_num} is not an Armstrong number.")
+
+
+
+# To check if a number is prime or not
+prime_num=int(input("Enter a number to check if it is prime or not: "))
+if prime_num>1:
+    for i in range(2,prime_num):
+        if prime_num%i==0:
+            print(f"{prime_num} is not a prime number.")
+            break
+    else:
+        print(f"{prime_num} is a prime number.")
+
+
+
+# Find how mnay even and odd digit in the number
+e_o_num = int(input("Enter the number : "))
+temp=e_o_num
+even_count=0
+odd_count=0
+
+while temp > 0:
+    digit=temp%10
+    temp//=10
+    if digit%2==0:
+        even_count=even_count+1
+    else:
+        odd_count=odd_count+1
+
+print(f"Even digits in number are {even_count}\nOdd digits in number are {odd_count}")
+
