@@ -1,12 +1,14 @@
 def square(a):
-    print(f"Square of {a} is {a*a}")
+    return f"Square of {a} is {a*a}"
 
 def greet(name):
-    print(f"Good Morning {name}")
+    return f"Good Morning {name}"
 
 
 name=input("Enter your Name : ")
-greet(name)
+g=greet(name)
+print(g)
 
 a=int(input("Enter number which you want square : "))
-square(a)
+s=square(a)
+print(s)
