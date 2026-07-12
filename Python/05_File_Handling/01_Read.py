@@ -13,3 +13,5 @@ print(oneline)
 # Returns List of strings
 list=text_file.readlines()
 print(list)
+
+text_file.close()
