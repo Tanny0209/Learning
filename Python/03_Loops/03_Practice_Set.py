@@ -60,14 +60,7 @@ for i in str(number):
 print(f"Count of digits in {number} is: {count}")
 
 
-# reverse a number
-rev_number=int(input("Enter a number to reverse: "))
-rev=0
 
-while rev_number>0:
-    digit=rev_number%10
-    rev=(rev*10)+digit
-    rev_number//=10
 
 print(f"Reverse of the number is: {rev}")
 
