@@ -18,4 +18,5 @@ int main()
     }
     cout<<target<<" is repeated "<<counter<<endl;
 
+    return 0;
 }
