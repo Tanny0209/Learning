@@ -70,6 +70,58 @@ int second_max(int arr[],int size)
      return secondmax;
 }
 
+bool sorted(int arr[],int size)
+{
+    bool sort=false;
+    int max=arr[0];
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]<max)
+        {
+            sort = false;
+        }
+        else if (arr[i]>max)
+        {
+            max=arr[i];
+            sort=true;
+        }       
+    }
+    return sort;
+}
+
+
+void evensort(int arr[],int size)
+{
+    int temp[size];
+    int index=0;
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]%2==0)
+        {
+            temp[index]=arr[i];
+            index++;
+        }        
+    }
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]%2!=0)
+        {
+            temp[index]=arr[i];
+            index++;
+        }        
+    }
+    
+    cout<<"Sorted array is :- ";
+    for (int i = 0; i < size; i++)
+    {
+        cout<<temp[i]<<" ";
+    }
+    cout<<endl;
+}
+
 int main()
 {
     int numbers[6]={1,2,3,4,5,6};
@@ -79,5 +131,8 @@ int main()
     cout<<"Even numbers in the array element is "<<even(numbers,size)<<endl;
     cout<<"Maximun number in the array element is "<<max(numbers,size)<<endl;
     cout<<"Second Maximun number in the array element is "<<second_max(numbers,size)<<endl;
+    cout<<"Element are sorted = "<<sorted(numbers,size)<<endl;
+    evensort(numbers,size);
+
     return 0;
 }
