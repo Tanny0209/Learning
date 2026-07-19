@@ -1,4 +1,4 @@
-text_file=open("Python/05_File_Handling/001_Text.txt","r")
+text_file=open("Python/05_File_Handling/00_Text.txt","r")
 data=text_file.read()
 print(data)
 
