@@ -61,6 +61,27 @@ void evensort(int arr[],int size)
 }
 
 
+int second_max(int arr[],int size)
+{
+    int max=arr[0];
+    int secondmax=arr[0];
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]>max)
+        {
+            secondmax=max;
+            max=arr[i];
+        }
+        else if (arr[i]>secondmax && arr[i]!=max)
+        {
+            secondmax=arr[i];
+        }
+        
+    }
+     return secondmax;
+}
+
 int main()
 {
 
@@ -69,5 +90,6 @@ int main()
     cout<< eo(7) <<endl;
     cout << sorted(numbers,size)<<endl;
     evensort(numbers,size);
+    cout << second_max(numbers,size)<<endl;
     return 0;
 }
