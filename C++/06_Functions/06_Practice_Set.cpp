@@ -15,6 +15,20 @@ bool eo(int n)
     
 }
 
+bool sorted(int arr[],int size)
+{
+    bool sort=false;
+    int max=arr[0];
+
+    for(int i=1;i<size;i++)
+    {
+    if(arr[i] < arr[i-1])
+        return false;
+    }
+
+return true;
+}
+
 void evensort(int arr[],int size)
 {
     int temp[size];
@@ -53,6 +67,7 @@ int main()
     int numbers[6]={1,2,3,4,5,6};
     int size=6;
     cout<< eo(7) <<endl;
+    cout << sorted(numbers,size)<<endl;
     evensort(numbers,size);
     return 0;
 }
