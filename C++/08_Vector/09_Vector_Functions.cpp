@@ -20,6 +20,7 @@ int main()
     cout << "First element = " << numbers.front() << endl;
 
     numbers.insert(numbers.begin(), 10);
+    numbers.erase(numbers.begin()+2);
 
     for(int x : numbers)
         cout << x << " ";
