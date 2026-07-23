@@ -32,5 +32,10 @@ int main()
         cout<< x << " ";
 
     cout<< endl;
+
+    numbers.clear();
+    numbers.assign(5,45);
+    for(int x : numbers)
+          cout <<x<<" ";
     return 0;
 }
