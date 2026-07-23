@@ -25,6 +25,12 @@ int main()
     for(int x : numbers)
         cout << x << " ";
 
+        
+    cout<<"\n";
+    numbers.assign(4,50);
+    for(int x : numbers)
+        cout<< x << " ";
+
     cout<< endl;
     return 0;
 }
