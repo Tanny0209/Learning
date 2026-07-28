@@ -37,5 +37,9 @@ int main()
     numbers.assign(5,45);
     for(int x : numbers)
           cout <<x<<" ";
+
+    cout <<endl;
+    for (int x: numbers)
+        cout<<x<<" ";
     return 0;
 }
