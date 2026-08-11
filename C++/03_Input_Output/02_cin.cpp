@@ -6,6 +6,7 @@ int main()
     string name;
     int age;
 
+    
     cout << "Enter your fullname :- \n";
     cin.ignore();
     getline(cin,name);
