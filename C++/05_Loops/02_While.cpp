@@ -1,11 +1,11 @@
 /*
- * LESSON: The while loop.
+ * LESSON: The while loop - my second lesson on loops.
  * A "while" loop repeats as long as its condition stays TRUE.
  * Structure: while ( condition ) { body }
  *   - The condition is checked BEFORE each iteration (so it may run 0 times).
- *   - This is ideal when you do NOT know in advance how many times
+ *   - This is ideal when I do NOT know in advance how many times
  *     the loop must run (unlike a for loop).
- *   - You must update the condition's variable INSIDE the body,
+ *   - I must update the condition's variable INSIDE the body,
  *     otherwise the loop never ends (infinite loop)!
  */
 

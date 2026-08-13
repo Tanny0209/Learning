@@ -1,7 +1,7 @@
 /*
  * LESSON: Logical operators: && (AND), || (OR), ! (NOT).
  * They combine true/false conditions into more complex decisions and are
- * used to build multi-part if-tests. Key idea to understand: SHORT-CIRCUIT
+ * used to build multi-part if-tests. The key idea I learned is SHORT-CIRCUIT
  * evaluation - C++ stops evaluating as soon as the result is already known.
  */
 

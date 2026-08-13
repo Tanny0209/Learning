@@ -1,12 +1,12 @@
 /*
  * PURPOSE:
- * This lesson explains the difference between a vector's SIZE and its
+ * This lesson explains to me the difference between a vector's SIZE and its
  * CAPACITY, and how .reserve() pre-allocates memory ahead of time.
  * SIZE = elements actually stored. CAPACITY = memory slots available
  * without having to grab more. When size hits capacity, push_back()
  * makes the vector allocate a bigger block and copy everything over --
- * that copy is slow, so reserve() avoids repeated copying when you know
- * roughly how many elements you will add.
+ * that copy is slow, so reserve() avoids repeated copying when I know
+ * roughly how many elements I will add.
  */
 #include <iostream>
 #include <vector>

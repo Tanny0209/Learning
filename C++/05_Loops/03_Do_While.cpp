@@ -1,12 +1,12 @@
 /*
- * LESSON: The do-while loop.
+ * LESSON: The do-while loop - my third lesson on loops.
  * Structure: do { body } while ( condition );
  *   - The body runs FIRST, and ONLY AFTER that is the condition checked.
  *   - Guarantees the body executes AT LEAST ONCE, even if the
  *     condition is false from the start.
  *   - A while loop checks BEFORE running (0+ times); a do-while loop
  *     checks AFTER running (1+ times). This is the ONLY difference.
- *   - Note the semicolon (;) after the while(...) - it is required here,
+ *   - I noted the semicolon (;) after the while(...) - it is required here,
  *     unlike an ordinary while loop.
  */
 
@@ -25,6 +25,6 @@ do
 }
 while(i <= 5);
     // Here the loop stops once i becomes 6.
-    // Use a do-while when you need the body to run at least once,
+    // I would use a do-while when I need the body to run at least once,
     // e.g. showing a menu before asking the user whether to continue.
 }

@@ -1,7 +1,7 @@
 /*
- * LESSON: Functions - declaring, defining, and calling.
+ * LESSON: Functions - my first lesson on declaring, defining, and calling.
  * A function is a named block of reusable code. Instead of rewriting
- * the same code, you DEFINE it once and CALL it whenever you need it.
+ * the same code, I DEFINE it once and CALL it whenever I need it.
  * Anatomy of a definition:
  *   return_type function_name( parameters ) { body }
  *   - return_type: what the function gives back ("void" = nothing).

@@ -1,6 +1,6 @@
 /*
  * LESSON: Functions practice set.
- * Uses several functions to explore key ideas:
+ * I used several functions to explore key ideas:
  *   - bool functions returning true/false (even/odd, sorted check).
  *   - ARRAYS as function parameters: arr[] passes a pointer to the first
  *     element, so functions can READ and MODIFY the caller's data

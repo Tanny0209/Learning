@@ -1,11 +1,11 @@
 /*
  * LESSON: Function overloading.
- * In C++ you may give SEVERAL functions the SAME name, as long as their
+ * In C++ I may give SEVERAL functions the SAME name, as long as their
  * signatures differ. A signature = name + number, types, and order of
  * parameters. (Return type alone is NOT enough to overload.)
  *
- * HOW THE COMPILER PICKS: when you call add(...), the compiler looks at
- * the arguments you pass and picks the overload whose parameters match:
+ * HOW THE COMPILER PICKS: when I call add(...), the compiler looks at
+ * the arguments I pass and picks the overload whose parameters match:
  *   1. most exact match by count and type, then
  *   2. it will do minor standard conversions (like int -> double) if needed.
  * This is called "overload resolution" and happens at COMPILE TIME.

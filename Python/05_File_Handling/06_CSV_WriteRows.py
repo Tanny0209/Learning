@@ -1,5 +1,5 @@
-# Purpose: shows a cleaner way to write CSV data — prepare ALL rows first in a
-# list of lists, then write them all at once with writerows().
+# Purpose: shows me a cleaner way to write CSV data — prepare ALL rows first in
+# a list of lists, then write them all at once with writerows().
 
 import csv
 

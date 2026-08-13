@@ -1,4 +1,4 @@
-# Purpose: shows how to WRITE a CSV file row by row with csv.writer.
+# Purpose: shows me how to WRITE a CSV file row by row with csv.writer.
 # This version writes the header first, then one line of data per writerow call.
 
 import csv
@@ -8,12 +8,12 @@ import csv
 # the csv module manages line endings itself, so newline="" avoids blank rows.
 with open("Python/05_File_Handling/00_Student.csv", "w", newline="") as file:
 
-    # csv.writer wraps the file and gives us helper methods to write CSV data.
+    # csv.writer wraps the file and gives me helper methods to write CSV data.
     # It handles placing commas between fields and the "\n" at the end of row.
     writer = csv.writer(file)
 
     # writerow() writes ONE row (a single line). The list becomes the columns.
-    # A header row is just a normal row, so we write it first.
+    # A header row is just a normal row, so I write it first.
     writer.writerow(["Name", "Age", "Marks"])
 
     # Each of these adds one more line of data to the CSV file.

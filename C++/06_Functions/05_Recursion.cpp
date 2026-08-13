@@ -1,12 +1,12 @@
 /*
- * LESSON: Recursion - a function that calls itself.
+ * LESSON: Recursion - my first lesson on a function that calls itself.
  * Idea: solve a big problem by solving a smaller version of the SAME
  * problem. factorial(n) = n * factorial(n-1).
  *
  * Every recursion needs TWO things:
  *   1. BASE CASE  - a situation where the answer is known directly and
  *                   the function returns WITHOUT calling itself. This
- *                   stops the chain (without it you get infinite recursion
+ *                   stops the chain (without it I get infinite recursion
  *                   and the program crashes).
  *   2. RECURSIVE CASE - the function calls itself with a smaller input,
  *                   getting closer to the base case every time.

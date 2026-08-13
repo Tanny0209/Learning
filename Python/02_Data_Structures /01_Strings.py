@@ -1,5 +1,5 @@
-# LESSON: Strings - creation, indexing, slicing, and built-in methods
-# Purpose: Shows the 3 ways to write a string, how to grab characters or
+# LESSON: Strings - my lesson on creation, indexing, slicing, and built-in methods
+# Purpose: Shows me the 3 ways to write a string, how to grab characters or
 # pieces of a string (indexing and slicing), and handy string methods.
 
 # 3 Types to define a string in python
@@ -11,7 +11,7 @@ address = """123 Main Street """  # triple quotes: allows multi-line text
 
 # Strings are immutable in python
 # This means that once a string is created, it cannot be changed
-# You cannot do name[0] = "T". To "change" a string you must create a new one.
+# I cannot do name[0] = "T". To "change" a string I must create a new one.
 # (Immutable = unchangeable. Lists, learned later, ARE changeable/mutable.)
 
 # INDEXING: every character in a string has a position number (index).
@@ -36,9 +36,9 @@ print(surname[-4:]) #print last 4 characters (awar)
 print(address[0:8:2]) #print every 2nd character from index 0 to 8 (1 a t)
 
 # Fucntions of strings
-# These methods are BUILT INTO strings - call them with dot notation:
+# These methods are BUILT INTO strings - I call them with dot notation:
 #   string_name.method_name(arguments). They never modify the original
-#   string (immutable!); instead they RETURN a new result you can print/use.
+#   string (immutable!); instead they RETURN a new result I can print/use.
 print(len(address)) #print the length of the string (17)
 # len() counts the TOTAL characters including spaces: "123 Main Street " is 17.
 print(address.endswith("Street ")) #print True if the string ends with "Street "

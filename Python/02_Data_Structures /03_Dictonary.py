@@ -1,13 +1,13 @@
 # LESSON: Dictionaries (key-value pairs)
-# Purpose: Introduces the dict - a collection that maps KEYS to VALUES so you
+# Purpose: Introduces the dict - a collection that maps KEYS to VALUES so I
 # can look data up by name instead of by index. Think of it like a phone book:
-# you find a person's number (value) using their name (key).
+# I find a person's number (value) using their name (key).
 
 # Key ideas:
 #   - Written with curly braces {} as key: value pairs separated by commas.
-#   - "Indexed" by keys: you look up marks["Tanmay"], not a position number.
+#   - "Indexed" by keys: I look up marks["Tanmay"], not a position number.
 #   - No duplicate keys allowed (a later key with the same name overwrites).
-#   - Keys can be any immutable type: strings, numbers, tuples. Here we even
+#   - Keys can be any immutable type: strings, numbers, tuples. Here I even
 #     use the integer 92 as a key - valid, though strings are more common.
 # Dictionary is a collection of key-value pairs. 
 # It is unordered, mutable, indexed, and cannot have duplicate keys.

@@ -1,6 +1,6 @@
 /*
  * LESSON: cout - the standard OUTPUT stream.
- * cout ("character output") sends data from your program to the console.
+ * cout ("character output") sends data from my program to the console.
  * The << "insertion" operator pushes each value into the stream. Multiple <<
  * operators can be chained in a single line to mix text and variables.
  */
@@ -13,7 +13,7 @@ int main(){
 
  // Chained << operators: first a string, then the variable's value.
  // "\n" is the escape sequence for a NEWLINE (moves to the next line).
- // Note how a variable is NOT wrapped in quotes - quotes mean literal text.
+ // I note that a variable is NOT wrapped in quotes - quotes mean literal text.
  cout << "Age is "<< age << "\n";
  return 0;
 }

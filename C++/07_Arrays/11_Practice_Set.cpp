@@ -1,13 +1,14 @@
 /*
-    PURPOSE: Practice set - a collection of classic array problems solved with
-    functions. Each function demonstrates one reusable idea: summing, average,
-    counting evens, max, second max, sorted-check and even-first ordering.
+    PURPOSE: My practice set - a collection of classic array problems solved
+    with functions. Each function demonstrates one reusable idea: summing,
+    average, counting evens, max, second max, sorted-check and even-first
+    ordering.
 
     NOTE ON ARRAY PARAMETERS: "int arr[]" in a function parameter does NOT
     copy the array. Instead it "decays" into a pointer to the first element,
-    so the function works on the ORIGINAL array. Because of that, the caller
-    MUST also pass the size (int size) - a function cannot know how long the
-    array is on its own.
+    so the function works on the ORIGINAL array. Because of that, I MUST also
+    pass the size (int size) - a function cannot know how long the array is on
+    its own.
 */
 
 #include <iostream>
@@ -15,7 +16,7 @@ using namespace std;
 
 /* Sum of all elements.
    Traverse the array with a running total: add each element to "sum".
-   Start sum at 0 so the accumulator is correct even for an empty array. */
+   I start sum at 0 so the accumulator is correct even for an empty array. */
 int sum(int arr[],int size)
 {
     int sum=0;
@@ -86,7 +87,7 @@ int max(int arr[],int size)
 
    EDGE CASE: if the array is {5,5,1}, the "arr[i]!=max" guard means the
    second 5 is NOT counted, so secondmax stays 1. (Behavior for duplicates
-   depends on what definition you want - worth thinking about.) */
+   depends on what definition I want - worth thinking about.) */
 int second_max(int arr[],int size)
 {
     int max=arr[0];
@@ -114,7 +115,7 @@ int second_max(int arr[],int size)
    "return false" inside the loop exits the whole function immediately.
 
    NOTE: there is an unused variable "sort" and an unused "max" here - they
-   do nothing. If no violation is found the loop finishes and we return true,
+   do nothing. If no violation is found the loop finishes and I return true,
    which is the correct answer. */
 bool sorted(int arr[],int size)
 {

@@ -1,6 +1,6 @@
 /*
  * PURPOSE:
- * This lesson shows two handy shortcuts for reading the ends of a vector:
+ * This lesson shows me two handy shortcuts for reading the ends of a vector:
  * .front() returns a reference to the FIRST element, and .back() returns a
  * reference to the LAST element. They are clearer than numbers[0] and
  * numbers[size-1], and they work even if the size changes.

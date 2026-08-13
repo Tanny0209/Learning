@@ -1,6 +1,6 @@
 /*
  * PURPOSE:
- * This lesson shows .resize(), which actually changes the vector's SIZE
+ * This lesson shows me .resize(), which actually changes the vector's SIZE
  * (number of elements), unlike reserve() which only changes capacity.
  * resize() can GROW the vector (new elements are value-initialized to 0
  * for ints) or SHRINK it (excess trailing elements are discarded). It also

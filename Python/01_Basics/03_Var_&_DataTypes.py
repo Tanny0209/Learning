@@ -1,13 +1,13 @@
 # LESSON: Variables and Python Data Types
-# Purpose: Introduces variables (names that store values) and Python's basic
-# data types: int, float, str, bool, and None.
+# Purpose: Introduces me to variables (names that store values) and Python's
+# basic data types: int, float, str, bool, and None.
 
-# What is a variable? It is a named box in memory where you can store a value.
+# What is a variable? It is a named box in memory where I can store a value.
 #   a = 30  ->  the name "a" now refers to the number 30.
 
 # DYNAMIC TYPING: In Python, a variable can hold ANY type of value, and it
-# can even change type later. You never declare a type; Python figures it out
-# from the value you assign.
+# can even change type later. I never declare a type; Python figures it out
+# from the value I assign.
 
 a=30 #This  a is a variable it stores the value 30
 print(a)
@@ -22,14 +22,14 @@ print(a)
 # 32a=56 (This will cause a syntax error)
 
 # DataTypes in Python
-# Each value in Python has a type, which decides what operations you can
+# Each value in Python has a type, which decides what operations I can
 # do with it and how it is stored in memory. The type() function returns
 # the type of any value.
 
 # 1. int store whole numbers (no decimal point, e.g. 10, -5, 0)
 a=10
 print(type(a)) #This will print the data type of variable a
-# type(a) returns <class 'int'> which Python prints to tell you a is an integer.
+# type(a) returns <class 'int'> which Python prints to tell me a is an integer.
 
 # 2. float store decimal numbers (numbers with a fractional part)
 b=10.5

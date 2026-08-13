@@ -1,5 +1,5 @@
 /*
- * LESSON: The for loop.
+ * LESSON: The for loop - my first lesson on repeating code.
  * A "for" loop repeats a block of code a fixed number of times.
  * Structure: for ( initialization ; condition ; update ) { body }
  *   1. initialization  -> runs ONCE before the loop starts (creates counter)

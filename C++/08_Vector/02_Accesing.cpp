@@ -1,6 +1,6 @@
 /*
  * PURPOSE:
- * This lesson shows how to READ and WRITE individual elements of a vector.
+ * This lesson shows me how to READ and WRITE individual elements of a vector.
  * It compares the subscript operator [] with the .at() member function.
  * BOTH use a zero-based index: index 0 is the first element.
  */
@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    // A vector of 5 ints. Remember: element indexes go 0..4.
+    // A vector of 5 ints. I remember: element indexes go 0..4.
     vector<int> numbers = {10,20,30,40,50};
 
     // [] operator: reads the element at index 2 (the third one, value 30).
@@ -26,7 +26,7 @@ int main()
 
     // .at() is a member function that does the same thing as [] but with
     // an extra safety check: it throws an exception if the index is out of
-    // range. Good when the index comes from user input you don't trust.
+    // range. Good when the index comes from user input I don't trust.
     cout << numbers.at(4)<<endl;
     numbers.at(4) = 78;
     cout << numbers.at(4)<<endl;

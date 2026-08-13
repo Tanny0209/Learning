@@ -1,9 +1,9 @@
-# LESSON: Importing packages/modules (third-party libraries)
-# Purpose: Shows how to use code written by others. You don't have to build
-# everything yourself - Python lets you "import" ready-made libraries.
+# LESSON: My first lesson on importing packages/modules (third-party libraries)
+# Purpose: Shows how I can use code written by others. I don't have to build
+# everything myself - Python lets me "import" ready-made libraries.
 
 # What is a library/package/module? A collection of pre-written code
-# (functions, classes, etc.) that solves common problems, so you can reuse it.
+# (functions, classes, etc.) that solves common problems, so I can reuse it.
 
 # pyjokes is a THIRD-PARTY library (made by the community, not built into
 # Python). Because of that, it must be installed first with:

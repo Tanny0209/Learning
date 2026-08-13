@@ -1,6 +1,6 @@
 /*
-    PURPOSE: Counting frequency (how many times a value appears) in an array.
-    This is linear search combined with a counter variable.
+    PURPOSE: My lesson on counting frequency (how many times a value appears)
+    in an array. This is linear search combined with a counter variable.
 */
 
 #include<iostream>
@@ -10,7 +10,7 @@ int main()
 {
     int numbers[8]={5,2,12,7,5,69,2,5};
 
-    // The value whose occurrences we want to count.
+    // The value whose occurrences I want to count.
     int target=5;
     // "counter" accumulates the number of matches. Must start at 0.
     int counter=0;
@@ -19,7 +19,7 @@ int main()
        Walk through every element (i = 0..7). Each time numbers[i] equals the
        target, increment counter by one (counter++).
 
-       NOTE: this time we do NOT break after a match. Linear search stops at
+       NOTE: this time I do NOT break after a match. Linear search stops at
        the first match; frequency counting must keep going to see all matches.
 
        In this array, 5 appears at indices 0, 4 and 7 -> counter becomes 3.

@@ -1,5 +1,5 @@
-# LESSON: Getting user input and type casting
-# Purpose: Teaches input() (reading text the user types) and type casting
+# LESSON: My lesson on getting user input and type casting
+# Purpose: Teaches me input() (reading text the user types) and type casting
 # (converting one data type into another, here str -> int).
 
 # input("message"): pauses the program, prints the prompt, waits for the user
@@ -20,7 +20,7 @@ print("The sum of", a, "and", b, "is", c)
 
 
 # This is same program as above but with type casting done at the time of input itself.
-# SAME LOGIC, SHORTER CODE: instead of casting on a separate line, we wrap
+# SAME LOGIC, SHORTER CODE: instead of casting on a separate line, I wrap
 # input() INSIDE int(), so the variable stores a number right away.
 # int(  input(...)  ) -> the inner function runs first, then the outer one
 # converts its result. Python always evaluates inner parentheses first.

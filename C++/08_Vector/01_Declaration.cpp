@@ -1,8 +1,8 @@
 /*
  * PURPOSE:
- * This lesson shows the different ways to DECLARE and INITIALIZE
- * a std::vector. A vector is a DYNAMIC ARRAY: it can grow and shrink
- * at runtime, unlike a plain C++ array whose size is fixed forever.
+ * This is my first lesson on vectors - the different ways to DECLARE and
+ * INITIALIZE a std::vector. A vector is a DYNAMIC ARRAY: it can grow and
+ * shrink at runtime, unlike a plain C++ array whose size is fixed forever.
  * The element type goes inside the angle brackets: vector<int> holds ints.
  */
 #include <iostream>
@@ -14,7 +14,7 @@ int main()
     // Default construction: an EMPTY vector with no elements and size 0.
     vector<int> first;
 
-    // Initializer list: create a vector holding 10, 20, 30 in that order.
+    // Initializer list: I create a vector holding 10, 20, 30 in that order.
     // This is the most readable way to start a vector with known values.
     vector<int> second = {10,20,30};
 

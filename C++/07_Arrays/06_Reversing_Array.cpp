@@ -1,6 +1,6 @@
 /*
-    PURPOSE: Reversing an array IN PLACE - swapping elements from both ends
-    toward the middle, so no extra array is needed.
+    PURPOSE: My lesson on reversing an array IN PLACE - swapping elements from
+    both ends toward the middle, so no extra array is needed.
 */
 
 #include <iostream>
@@ -16,7 +16,7 @@ int main()
 
     /* ALGORITHM (two-pointer swap):
        Repeat while left and right have NOT crossed:
-       1. Save numbers[left] in a temp variable (otherwise we would lose it).
+       1. Save numbers[left] in a temp variable (otherwise I would lose it).
        2. Copy numbers[right] into numbers[left].
        3. Copy the saved temp into numbers[right].   <- this is a swap
        4. Move left forward and right backward.
@@ -25,7 +25,7 @@ int main()
        overwritten, so the original a is lost. The temp variable preserves it.
 
        WHY "left < right"? When the pointers meet in the middle, every pair
-       has been swapped already - swapping further would UNDO our work.
+       has been swapped already - swapping further would UNDO my work.
 
        EDGE CASE: for an odd-sized array the middle element stays in place,
        which is correct. For an empty/single-element array the loop never

@@ -1,5 +1,5 @@
 # LESSON: Operators in Python
-# Purpose: Covers the four main operator families - Arithmetic (math),
+# Purpose: Covers the four main operator families I need - Arithmetic (math),
 # Assignment (storing/updating values), Comparison (comparing values to get
 # True/False), and Logical (combining True/False conditions).
 
@@ -38,7 +38,7 @@ print("Is 5 less than 4? ", f)
 # f=5>4 this will give true
 
 g= 5==5
-# "5 is equal to 5" is True, so g stores True. (Try 5==4 to see False.)
+# "5 is equal to 5" is True, so g stores True. (I can try 5==4 to see False.)
 print("Is 5 equal to 5? ", g)
 
 
@@ -51,7 +51,7 @@ print("Is 5 equal to 5? ", g)
 print("\n Logical Operators \n")
 # Truth Table for OR operator
 # OR is like a light switch: if either switch is on, the light is on.
-# Here you can see or returns True unless BOTH operands are False.
+# Here I can see or returns True unless BOTH operands are False.
 print("True or False is ", True or False)
 print("False or False is ", False or False)
 print("True or True is ", True or True)

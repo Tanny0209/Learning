@@ -1,4 +1,4 @@
-# RECURSION - a function that calls itself
+# RECURSION - my lesson on a function that calls itself
 # Instead of loops, a recursive function solves a problem by calling itself
 # with a SMALLER version of the same problem. Every recursion needs two parts:
 #  1. BASE CASE: a condition that stops the recursion (here n==0). Without

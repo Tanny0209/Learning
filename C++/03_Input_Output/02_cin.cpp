@@ -2,7 +2,7 @@
  * LESSON: cin - reading INPUT from the keyboard.
  * cin ("character input") is the opposite of cout: it pulls whatever the user
  * types out of the input stream and stores it in variables with >>.
- * Two important details:
+ * Two important details I learned:
  *   - >> reads only ONE "token" (it stops at whitespace/space), which is why
  *     a full name (with spaces) needs getline() instead.
  *   - After a >> read, a newline is often left in the buffer; cin.ignore()

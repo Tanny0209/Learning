@@ -1,6 +1,7 @@
 /*
-    PURPOSE: Left-rotating an array by one position - every element shifts one
-    slot to the left and the first element wraps around to the end.
+    PURPOSE: My lesson on left-rotating an array by one position - every
+    element shifts one slot to the left and the first element wraps around to
+    the end.
 */
 
 #include <iostream>

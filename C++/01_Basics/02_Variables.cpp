@@ -1,6 +1,6 @@
 /*
  * LESSON: Variables and the basic data types.
- * A variable is a named box in memory that stores a value. You must DECLARE
+ * A variable is a named box in memory that stores a value. I must DECLARE
  * a type for it first; the type decides how much memory it uses and what
  * kind of data it can hold. This lesson covers five types:
  *   string - a whole sentence/word (double quotes)
@@ -14,7 +14,7 @@
 using namespace std;
 
 int main() {
-    // DECLARATION + INITIALIZATION: choose a type, give a name, and set the
+    // DECLARATION + INITIALIZATION: I choose a type, give a name, and set the
     // starting value in one line. Without initialization a variable would
     // contain random "garbage" from whatever was in memory.
     string name = "John Doe"; // string = a sequence of characters (text),

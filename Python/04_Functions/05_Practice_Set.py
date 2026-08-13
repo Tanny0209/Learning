@@ -1,6 +1,6 @@
-# PRACTICE SET - wrap earlier logic inside reusable functions
+# PRACTICE SET - my practice wrapping earlier logic inside reusable functions
 # Everything from the loops practice set, but now packaged into functions.
-# The advantage: we define the logic once and call it whenever we need it,
+# The advantage: I define the logic once and call it whenever I need it,
 # passing the number to work on as an argument. Note these functions print
 # their result directly instead of returning it.
 
@@ -34,7 +34,7 @@ def reverse(n):
         n//=10
     print(rev)
 
-# Now we actually CALL the functions - a function does nothing until called.
+# Now I actually CALL the functions - a function does nothing until called.
 num=int(input("Enter number : "))
 eo(num)
 fact(num)
@@ -43,7 +43,7 @@ rev=int(input("Enter number which you want reverse : "))
 reverse(rev)
 
 # Palindrome 
-# A palindrome reads the same forwards and backwards. We copy n into ntemp
+# A palindrome reads the same forwards and backwards. I copy n into ntemp
 # and reverse the COPY so the original n stays intact for the comparison
 # at the end.
 def palindrome(n):

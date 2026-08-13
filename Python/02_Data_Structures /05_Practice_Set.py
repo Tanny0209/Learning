@@ -1,4 +1,4 @@
-# LESSON: Practice problems applying strings, lists, tuples, and their methods
+# LESSON: My practice problems applying strings, lists, tuples, and their methods
 # Purpose: Exercises that combine input(), string methods, list building with
 # append()/sort(), and built-in helpers sum() and count().
 
@@ -17,7 +17,7 @@ print(greet)
 # find() returns the index of the FIRST occurrence of its argument.
 # Searching for "  " (two spaces) finds double spaces in the text. If the
 # double space isn't there, find() returns -1 (Python's way of saying
-# "not found"). The result -1 or an index is what we print.
+# "not found"). The result -1 or an index is what I print.
 text=input("Enter a string : ")
 print(text.find("  ")) #print the index of the first occurrence of double spaces in the string (-1 if not found)
 
@@ -39,7 +39,7 @@ print(fruits)
 # take marks of 3 students from the user and sort them in ascending order
 # NOTE the difference from the fruit example: input is wrapped in int(),
 # because marks are NUMBERS. Sorting strings vs numbers gives different
-# results, so casting matters. Try sorting ["10", "9"] vs [10, 9] to see!
+# results, so casting matters. I can try sorting ["10", "9"] vs [10, 9] to see!
 marks=[]
 marks.append(int(input("Enter marks of student 1 : ")))
 marks.append(int(input("Enter marks of student 2 : ")))
@@ -50,7 +50,7 @@ print(marks) #sort the list of marks in ascending order and print it
 
 # take 3 numbers and sum them using a list
 # sum(list) is a built-in function that adds up every number in the list,
-# saving you from writing total = n[0] + n[1] + n[2] manually.
+# saving me from writing total = n[0] + n[1] + n[2] manually.
 number=[]
 number.append(int(input("Enter a number : ")))
 number.append(int(input("Enter another number : ")))

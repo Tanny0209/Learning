@@ -1,5 +1,5 @@
-# LESSON: Practice problems combining input(), int(), operators, and f-strings
-# Purpose: Three mini-problems that reinforce everything learned so far -
+# LESSON: My practice problems combining input(), int(), operators, and f-strings
+# Purpose: Three mini-problems that reinforce everything I learned so far -
 # taking input, casting to int, using the % (modulo) and ** (power) operators,
 # and printing values with f-strings.
 
@@ -16,7 +16,7 @@ print("Remainder is : ",c)
 
 # ---------- Problem 2: Average ----------
 # Average = (sum of all values) / (how many values there are).
-# Note: (d+e+f)/3 gives a float result (e.g. 6.666...). If we used // instead
+# Note: (d+e+f)/3 gives a float result (e.g. 6.666...). If I used // instead
 # (integer division) it would round down to a whole number.
 print("\n Average")
 d=int(input("Enter numbers 1 : "))

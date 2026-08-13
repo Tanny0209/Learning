@@ -1,4 +1,4 @@
-# LOOPS - doing the same thing many times without repeating code
+# LOOPS - my lesson on doing the same thing many times without repeating code
 # Loops let one small piece of code run over and over. This file explores
 # the for loop, the while loop, the break/continue/pass statements, nested
 # loops (a loop inside another loop), and a few classic loop exercises.
@@ -14,7 +14,7 @@ for i in range(1, 11):
 
 # While loop is used to execute a block of code repeatedly as long as a given condition is true.
 # Unlike for, a while loop has no built-in counter: it keeps going as long as
-# its condition stays True. YOU must change something inside the loop (here
+# its condition stays True. I must change something inside the loop (here
 # i += 1, which is shorthand for i = i + 1) so the condition eventually
 # becomes False - otherwise the loop would run forever!
 print("\nUsing while loop:")
@@ -25,8 +25,8 @@ while i <= 10:
 
 # Break
 # "break" instantly stops the entire loop, skipping whatever is left.
-# Here the loop starts at 1, but when i becomes 5 we bail out, so only
-# 1,2,3,4 are printed. Useful to stop early when we found what we wanted.
+# Here the loop starts at 1, but when i becomes 5 I bail out, so only
+# 1,2,3,4 are printed. Useful to stop early when I found what I wanted.
 print("\nUsing break statement:")
 for i in range(1,11):
     if i ==5:
@@ -36,7 +36,7 @@ for i in range(1,11):
 
 # Continue
 # "continue" skips only the CURRENT round and jumps straight to the next one.
-# Here i is incremented first, so when i==5 we skip the print for 5 but the
+# Here i is incremented first, so when i==5 I skip the print for 5 but the
 # loop carries on normally with 6,7,8,9,10,11.
 print("\nUsing continue statement:")
 i = 0
@@ -121,7 +121,7 @@ print("\nCount of even numbers from 1 to 100 is:", count)
 
 # Find maximum number from a list
 # "Linear search" for a maximum: assume the first element is the biggest,
-# then walk through the list replacing max_num whenever we find something larger.
+# then walk through the list replacing max_num whenever I find something larger.
 numbers = [10, 20, 30, 410, 50]
 max_num = numbers[0]
 
@@ -133,7 +133,7 @@ print("\nMaximum number from the list is:", max_num)
 
 
 # Factorial
-# Factorial of n (written n!) is n * (n-1) * ... * 2 * 1. We start the
+# Factorial of n (written n!) is n * (n-1) * ... * 2 * 1. I start the
 # accumulator at 1 (starting at 0 would make everything 0!) and multiply
 # by every integer from 1 up to num.
 num=int(input("Enter a number to find factorial: "))

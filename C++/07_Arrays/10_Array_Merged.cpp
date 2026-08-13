@@ -1,6 +1,6 @@
 /*
-    PURPOSE: Merging (combining) two arrays into one bigger array, element by
-    element, in order.
+    PURPOSE: My lesson on merging (combining) two arrays into one bigger array,
+    element by element, in order.
 */
 
 #include<iostream>
@@ -11,7 +11,7 @@ int main()
     int first[3]={1,2,3};
     int second[3]={4,5,6};
     /* The merged array must be big enough for BOTH inputs: 3 + 3 = 6.
-       CRITICAL: if you declare merged[5], writing merged[5] later would be
+       CRITICAL: if I declared merged[5], writing merged[5] later would be
        out of bounds (undefined behavior) - the size must equal first+second. */
     int merged[6];
 
@@ -28,7 +28,7 @@ int main()
         index++;
     }
 
-    /* Continue from where we stopped: index is now 3, so "second" is appended
+    /* Continue from where I stopped: index is now 3, so "second" is appended
        right after "first" instead of overwriting it. This is why index is NOT
        reset to 0 between the two loops. */
     for (int i = 0; i < 3; i++)

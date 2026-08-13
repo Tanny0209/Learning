@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     // Declares three ints: a = 10, c = 60, and b which is UNINITIALIZED
-    // (it holds whatever garbage was in memory until we assign it below).
+    // (it holds whatever garbage was in memory until I assign it below).
     int a=10,b,c=60;
 
     // "=" copies the VALUE of a (10) into b. a itself is not changed.

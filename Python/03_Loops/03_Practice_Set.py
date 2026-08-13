@@ -1,4 +1,4 @@
-# PRACTICE SET - apply conditionals and loops to real problems
+# PRACTICE SET - my practice applying conditionals and loops to real problems
 # This file is a collection of classic beginner exercises. Each one uses the
 # same building blocks: if/elif/else to branch, for/while loops to repeat,
 # and the % (modulo) and // (integer division) operators to pull digits
@@ -41,7 +41,7 @@ else:
 
 
 # print even numbers
-# range(1,101) gives 1..100. The % operator (remainder) tells us evenness:
+# range(1,101) gives 1..100. The % operator (remainder) tells me evenness:
 # i%2==0 means i divides by 2 exactly, so i is even.
 for i in range(1,101):
     if i%2==0:
@@ -49,7 +49,7 @@ for i in range(1,101):
 
 
 # print multiplication table of a number
-# f-strings let us embed values directly into text with {braces}.
+# f-strings let me embed values directly into text with {braces}.
 # One loop prints all 10 rows of the table for the typed-in number.
 mul=int(input("Enter a number to print multiplication table: "))
 for i in range(1,11):
@@ -57,7 +57,7 @@ for i in range(1,11):
 
 
 # Factorial
-# n! = n * (n-1) * ... * 2 * 1. We multiply the accumulator by every number
+# n! = n * (n-1) * ... * 2 * 1. I multiply the accumulator by every number
 # from 1 up to num. Starting from 1 is essential - starting from 0 would
 # wipe the product out to 0.
 num=int(input("Enter a number to find factorial: "))
@@ -81,9 +81,9 @@ print(f"Count of digits in {number} is: {count}")
 
 # reverse a number
 # Digit-extraction recipe: % 10 gives the last digit, // 10 chops it off.
-# We build rev backwards: rev = (rev * 10) + digit, so 123 -> 3 -> 32 -> 321.
+# I build rev backwards: rev = (rev * 10) + digit, so 123 -> 3 -> 32 -> 321.
 # Note //= is integer division: 123 // 10 = 12 (fraction dropped), which is
-# exactly what we need to peel digits off an integer.
+# exactly what I need to peel digits off an integer.
 rev_number=int(input("Enter a number to reverse: "))
 rev=0
 
@@ -96,7 +96,7 @@ print(f"Reverse of the number is: {rev}")
 
 
 # check if a number is a palindrome or not
-# A palindrome reads the same forwards and backwards (like 1221). We save the
+# A palindrome reads the same forwards and backwards (like 1221). I save the
 # original in temp, reverse a COPY into rev (so the original is untouched),
 # then compare the two.
 palindrome_number=int(input("Enter a number to check palindrome: "))
@@ -114,7 +114,7 @@ else:
 
 
 # Find largest digit in a number
-# Same digit-peeling loop, but now we compare each digit against the best one
+# Same digit-peeling loop, but now I compare each digit against the best one
 # found so far and remember it. largest_digit starts at 0 because every digit
 # is 0-9, so any digit will beat it.
 largest_digit_number=int(input("Enter a number to find largest digit: "))
@@ -149,8 +149,8 @@ else:
 
 
 # To check if a number is prime or not
-# A prime has no divisors except 1 and itself. We try every number from 2 up
-# to prime_num-1. If ANY divides evenly (remainder 0) it is not prime and we
+# A prime has no divisors except 1 and itself. I try every number from 2 up
+# to prime_num-1. If ANY divides evenly (remainder 0) it is not prime and I
 # break out early. The "else" attached to a for loop is special: it runs only
 # when the loop finishes WITHOUT a break - i.e. when no divisor was found.
 prime_num=int(input("Enter a number to check if it is prime or not: "))

@@ -1,4 +1,4 @@
-# ARGUMENTS - passing data into functions in different ways
+# ARGUMENTS - my lesson on passing data into functions in different ways
 # Functions can receive inputs through parameters. This file shows the
 # common ways to supply those inputs: default values, positional arguments,
 # keyword arguments, *args (many positional values) and **kwargs (many named
@@ -26,7 +26,7 @@ student("Tanmay",22)   # name="Tanmay", age=22
 student(20,"Tanmay")   # WRONG order: name=20, age="Tanmay"
 
 # Keyword Argument 
-# Instead of position, we name WHICH parameter each value belongs to.
+# Instead of position, I name WHICH parameter each value belongs to.
 # Order no longer matters, which is safer and easier to read.
 student(age=22,name="Tanmay")
 
@@ -34,7 +34,7 @@ student(age=22,name="Tanmay")
 # *args 
 # The * before numbers collects ALL positional arguments into a tuple named
 # "numbers". This lets one function handle any number of values - here the
-# loop adds up however many arguments we pass. Notice how Python's built-in
+# loop adds up however many arguments I pass. Notice how Python's built-in
 # print works the same way, accepting any number of items.
 def add(*numbers):
     total=0
@@ -48,7 +48,7 @@ add(5,10,15)
 
 # Kwargs
 # ** before kwargs collects all the keyword arguments into a dictionary
-# (key-value pairs). We passed two named values, so kwargs is
+# (key-value pairs). I passed two named values, so kwargs is
 # {"name": "Tanmay", "age": 22}. Useful when a function needs flexible input.
 def det(**kwargs):
     print(kwargs)

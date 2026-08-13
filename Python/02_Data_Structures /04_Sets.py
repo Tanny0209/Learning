@@ -1,12 +1,12 @@
-# LESSON: Sets - unique elements and set operations
+# LESSON: Sets - my lesson on unique elements and set operations
 # Purpose: Introduces the set, a collection that stores UNIQUE values in no
 # particular order, and its methods add(), union(), and intersection().
 
 # What is a set? Written with curly braces {}, like a dictionary but WITHOUT
 # colons. Key properties:
-#   - UNORDERED: no index, so you CANNOT do s[0].
+#   - UNORDERED: no index, so I CANNOT do s[0].
 #   - NO DUPLICATES: each value appears only once.
-#   - MUTABLE: you can add/remove elements.
+#   - MUTABLE: I can add/remove elements.
 # This makes sets perfect for removing duplicates or membership checks.
 
 s={1,2,3,4,5} # this is a set
@@ -17,7 +17,7 @@ b={} # this will create an empty dictionary, not a set
 # TRICKY! Empty curly braces {} make an empty DICT, not a set. This is a
 # common beginner trap - the braces are ambiguous.
 e=set() # this is an empty set
-# To make an empty set you must use the set() constructor with no arguments.
+# To make an empty set I must use the set() constructor with no arguments.
 print(b, type(b))   
 print(e, type(e))
 

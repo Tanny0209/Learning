@@ -1,6 +1,6 @@
 /*
  * LESSON: Default arguments.
- * You can give a parameter a DEFAULT value in the function definition.
+ * I can give a parameter a DEFAULT value in the function definition.
  * If the caller does NOT pass an argument for it, the default is used;
  * if the caller DOES pass one, that value replaces the default.
  * Rules:

@@ -1,7 +1,7 @@
 # LESSON: Lists vs Tuples (mutable vs immutable)
 # Purpose: Compares Python's two main ordered collections. A LIST can be
 # changed after creation (mutable); a TUPLE cannot (immutable). Knowing the
-# difference helps you pick the right tool and avoid bugs.
+# difference helps me pick the right tool and avoid bugs.
 
 # List
 print("List")
@@ -13,7 +13,7 @@ list = ["apple", "banana",5, 3.14, True, None]
 print(list) #Print the list
 
 # Lists are mutable
-# "Mutable" = changeable. You can replace, add, and remove elements freely.
+# "Mutable" = changeable. I can replace, add, and remove elements freely.
 list[0]="orange" #Change the first element of the list 
 # Indexing works like strings (starts at 0), but here assignment is allowed:
 # index 0 held "apple", now it holds "orange". The list object is modified.
@@ -52,7 +52,7 @@ print(type(t)) #Print the type of the tuple
 print(t) #Print the tuple
 
 # tuples are immutable
-# The key difference: you CANNOT do t[0] = "x". Trying to modify a tuple
+# The key difference: I CANNOT do t[0] = "x". Trying to modify a tuple
 # raises a TypeError. Tuples are used when the data must stay fixed, e.g.
 # coordinates, days of the week, or function results that shouldn't change.
 print(t[0]) #Print the first element of the tuple

@@ -1,6 +1,6 @@
-# CONDITIONALS - making decisions in Python with if / elif / else
+# CONDITIONALS - my lesson on making decisions in Python with if / elif / else
 # A program can only be useful if it can make decisions, and that is what
-# conditional statements are for. They let us run different code depending
+# conditional statements are for. They let me run different code depending
 # on whether a condition (an expression that is True or False) holds.
 # The general pattern is: if <condition> : <indented block> [elif ...] [else ...]
 # Only ONE branch of an if/elif/else chain ever runs - Python checks them
@@ -8,8 +8,8 @@
 # Indentation (the spaces before the code) is how Python knows which lines
 # belong to each branch - 4 spaces is the standard, and it is REQUIRED.
 
-# input() always returns text (a string), so we must wrap it in int() to
-# convert the typed answer into a number we can compare with >= and <.
+# input() always returns text (a string), so I must wrap it in int() to
+# convert the typed answer into a number I can compare with >= and <.
 a=int(input("Enter your age: "))
 
 # The "if" block runs ONLY when the condition a>=18 is True (age 18 or more).
@@ -30,7 +30,7 @@ else:
 
 # Multiple If-Else Statements
 
-#  this program will print 2 grade if we enter marks which satisfy the both if conditions.
+#  this program will print 2 grade if I enter marks which satisfy the both if conditions.
 b=int(input("Enter your marks: "))
 
 # NOTE: this "if" block is NOT connected to the if/else below it, because

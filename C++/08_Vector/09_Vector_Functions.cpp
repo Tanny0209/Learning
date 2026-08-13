@@ -1,8 +1,8 @@
 /*
  * PURPOSE:
- * This lesson is a tour of the most common vector member functions:
+ * This lesson is my tour of the most common vector member functions:
  * size(), clear(), push_back(), front(), insert(), erase(), and assign().
- * It shows how to empty a vector, add elements, place/remove elements in
+ * It shows me how to empty a vector, add elements, place/remove elements in
  * the MIDDLE using iterators, and completely replace the contents.
  */
 #include <iostream>
@@ -27,7 +27,7 @@ int main()
     // The vector is reusable after clear(): add a single element again.
     numbers.push_back(100);
 
-    // front() = first element, which is now the 100 we just pushed.
+    // front() = first element, which is now the 100 I just pushed.
     cout << "First element = " << numbers.front() << endl;
 
     // insert(iterator, value) puts a value BEFORE the given position.

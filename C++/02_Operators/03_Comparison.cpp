@@ -2,8 +2,8 @@
  * LESSON: Comparison (relational) operators.
  * These compare two values and ALWAYS produce a bool result. cout prints a
  * bool as 1 (true) or 0 (false). Comparison operators are the building
- * blocks of if-conditions. Warning: "==" means EQUAL-TO while "=" means
- * ASSIGNMENT - mixing them up is one of the most common beginner bugs.
+ * blocks of if-conditions. I must remember: "==" means EQUAL-TO while "="
+ * means ASSIGNMENT - mixing them up is one of the most common beginner bugs.
  */
 
 #include <iostream>

@@ -1,6 +1,6 @@
 /*
-    PURPOSE: Linear search - the simplest search algorithm. We look for a
-    target value by checking every element one by one until we find it.
+    PURPOSE: Linear search - my first search algorithm. I look for a
+    target value by checking every element one by one until I find it.
 */
 
 #include <iostream>
@@ -9,17 +9,17 @@ using namespace std;
 int main()
 {
     int marks[5]={87,95,77,68,88};
-    // "target" is the value we want to locate inside the array.
+    // "target" is the value I want to locate inside the array.
     int target=77;
 
     /* LINEAR SEARCH ALGORITHM:
        Step 1 - start at index 0.
        Step 2 - compare marks[i] with the target.
-       Step 3 - if equal, we found it; report the index and stop.
+       Step 3 - if equal, I found it; report the index and stop.
        Step 4 - otherwise move to the next index and repeat.
 
-       WHY does this work? Because we examine EVERY position from 0 to 4,
-       no element can escape our check. The order does not matter.
+       WHY does this work? Because I examine EVERY position from 0 to 4,
+       no element can escape my check. The order does not matter.
 
        "break" exits the loop immediately after finding the match. Without
        it, the loop would keep going and print the same index over and over

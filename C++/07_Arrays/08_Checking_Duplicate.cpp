@@ -1,6 +1,7 @@
 /*
-    PURPOSE: Detecting duplicates - comparing every pair of elements with a
-    NESTED loop, so each element is compared with every later element.
+    PURPOSE: My lesson on detecting duplicates - comparing every pair of
+    elements with a NESTED loop, so each element is compared with every later
+    element.
 */
 
 #include <iostream>
@@ -22,7 +23,7 @@ int main()
        When numbers[i] == numbers[j], a duplicate is reported. Here i=0 (5)
        matches j=4 (5), so "Duplicate Found OF No 5" prints once.
 
-       COMPLEXITY: O(n^2) because for n elements we make roughly n*n/2
+       COMPLEXITY: O(n^2) because for n elements I make roughly n*n/2
        comparisons - fine for small arrays, slow for huge ones. */
     for (int i = 0; i < 6; i++)
     {

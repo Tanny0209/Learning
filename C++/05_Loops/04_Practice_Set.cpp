@@ -1,6 +1,6 @@
 /*
- * LESSON: Putting loops to work (practice set).
- * Combines for loops with if statements and the modulus operator (%)
+ * LESSON: Putting loops to work (my practice set).
+ * I combined for loops with if statements and the modulus operator (%)
  * to solve two real problems: printing a multiplication table and
  * summing only the even numbers from 0 to 100.
  */
