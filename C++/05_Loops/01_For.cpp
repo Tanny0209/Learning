@@ -49,7 +49,7 @@ int main()
     // sum: adds all numbers from 1 to num2 (1+2+3+...+num2).
     // Note: this is nearly identical to factorial, but starts at 0 and ADDS.
     int num2;
-    cout << "Enter number which you want factorial :- ";
+    cout << "Enter number which you want Sum:- ";
     cin >> num2;
     int sum =0;                    // sum starts at 0 (adding starts from zero).
     for (int fact = 1; fact <=num2; fact++)
