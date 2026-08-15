@@ -13,6 +13,7 @@ with open("Python/05_File_Handling/00_Text.txt", "r") as file:
     # Expected: 3, since we just read 3 characters.
     print(file.tell())
 
+
     # .read(2) reads the next 2 characters, moving the cursor forward by 2 more.
     file.read(2)
 
