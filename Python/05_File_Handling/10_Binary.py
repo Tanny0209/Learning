@@ -15,6 +15,7 @@ with open("Python/05_File_Handling/00_Binary.bin", "rb") as file2:
 
 # --- 2. Copying a Binary File (Image) ---
 
+
 # Read the entire PNG image as raw bytes
 with open("Python/05_File_Handling/00.png", "rb") as source:
     da = source.read()
