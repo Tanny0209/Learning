@@ -17,6 +17,7 @@ int main()
     // Works just like a plain array.
     cout << numbers[2] << endl;
 
+    
     // [] operator can also be used on the LEFT side to change a value:
     // this overwrites index 2, so 30 becomes 300.
     numbers[2] = 300;
