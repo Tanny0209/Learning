@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+    
     vector <int> numbers={10,20,30};
 
     // Create iterator pointing to the first element (index 0)
