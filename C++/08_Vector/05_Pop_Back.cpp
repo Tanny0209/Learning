@@ -9,6 +9,7 @@
 
 using namespace std;
 
+
 int main()
 {
     // A vector with 5 elements: {10, 20, 30, 40, 50}.
