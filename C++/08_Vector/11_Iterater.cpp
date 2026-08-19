@@ -10,6 +10,7 @@ int main()
     
     vector <int> numbers={10,20,30};
 
+    
     // Create iterator pointing to the first element (index 0)
     vector<int>::iterator it=numbers.begin();
     cout<<*it<<endl;  // Dereference *it to get value → prints 10
