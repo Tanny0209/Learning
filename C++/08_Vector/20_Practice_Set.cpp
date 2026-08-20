@@ -56,18 +56,46 @@ void maxmindiff(vector<int> &v)
     int max=v[0];
     int min=v[0];
 
-    for(int i=0;i<v.size();i++)
+    for(int i=1;i<v.size();i++)
     {
         if (v[i]>max)
         {
             max=v[i];
         }
-        if(v[i]<max)
+        if(v[i]<min)
         {
             min=v[i];
         }
     }
     cout<<"\nDifference between the Maximun and Minimun no is :- "<<max-min;
+}
+
+void zeroend(vector<int> &v)
+{
+    auto e=v.end();
+    for(int i=0;i<v.size();i++)
+    {
+        int temp;
+        if(v[i]==0)
+        {
+            temp=v[i];
+            v.erase(v.begin()+i);
+            v.insert(e,temp);
+        }
+    }
+}
+
+
+void rmconsdup(vector<int> &v)
+{
+    for(int i=0;i<v.size()-1;i++)
+    {
+        if(v[i]==v[i+1])
+        {
+            v.erase(v.begin()+i);
+            i--;
+        }
+    }
 }
 
 int main() {
@@ -86,5 +114,11 @@ int main() {
     greatercount(numbers,number);
 
     maxmindiff(numbers);
+
+    zeroend(numbers);
+    printvector(numbers);
+
+    rmconsdup(numbers);
+    printvector(numbers);
     return 0;
 }
