@@ -6,7 +6,7 @@ void takeVector(vector<int> &v,int size)
 {
     for(int i=0;i<size;i++)
     {
-        cout<<"Enter the elemrnt at index "<<i<<":- ";
+        cout<<"\nEnter the elemrnt at index "<<i<<":- ";
         int temp;
         cin>>temp;
         v.push_back(temp);
@@ -15,7 +15,7 @@ void takeVector(vector<int> &v,int size)
 
 void printvector(vector<int> &v)
 {
-    cout<<"The Elements in the vector are: ";
+    cout<<"\nThe Elements in the vector are: ";
     for(int i=0;i<v.size();i++)
     {
         cout<<v[i]<<" ";
@@ -24,7 +24,7 @@ void printvector(vector<int> &v)
 }
 
 
-int greatest(vector<int> &v)
+void greatest(vector<int> &v)
 {
     int max=v[0];
     for(int i=1;i<v.size();i++)
@@ -34,8 +34,40 @@ int greatest(vector<int> &v)
             max=v[i];
         }
     }
-    cout<<"Greatest Element from the vector is :- ";
-    return max;
+    cout<<"\nGreatest Element from the vector is :- "<<max;
+}
+
+void greatercount(vector<int> &v,int num)
+{
+    int count=0;
+    for(int i=0;i<v.size();i++)
+    {
+        if (v[i]>num)
+        {
+            count++;
+        }
+    
+    }
+    cout<<"\nNumbers greater than the "<<num<<" are :- "<<count;
+}
+
+void maxmindiff(vector<int> &v)
+{
+    int max=v[0];
+    int min=v[0];
+
+    for(int i=0;i<v.size();i++)
+    {
+        if (v[i]>max)
+        {
+            max=v[i];
+        }
+        if(v[i]<max)
+        {
+            min=v[i];
+        }
+    }
+    cout<<"\nDifference between the Maximun and Minimun no is :- "<<max-min;
 }
 
 int main() {
@@ -46,7 +78,13 @@ int main() {
     cin>>size;
     takeVector(numbers,size);
     printvector(numbers);
-    cout<<greatest(numbers);
+    greatest(numbers);
 
+    int number;
+    cout<<"\nEnter the number to check how many numbers are greater than it :- ";
+    cin>>number;
+    greatercount(numbers,number);
+
+    maxmindiff(numbers);
     return 0;
 }
