@@ -70,22 +70,6 @@ void maxmindiff(vector<int> &v)
     cout<<"\nDifference between the Maximun and Minimun no is :- "<<max-min;
 }
 
-void zeroend(vector<int> &v)
-{
-    auto e=v.end();
-    for(int i=0;i<v.size();i++)
-    {
-        int temp;
-        if(v[i]==0)
-        {
-            temp=v[i];
-            v.erase(v.begin()+i);
-            v.insert(e,temp);
-        }
-    }
-}
-
-
 void rmconsdup(vector<int> &v)
 {
     for(int i=0;i<v.size()-1;i++)
@@ -96,6 +80,22 @@ void rmconsdup(vector<int> &v)
             i--;
         }
     }
+}
+
+void leroby1(vector<int> &v)
+{
+    auto b=v.begin();
+    int temp=*b;
+    v.erase(v.begin());
+    v.push_back(temp);
+}
+
+void riroby1(vector<int> &v)
+{
+    auto e=v.end()-1;
+    int temp=*e;
+    v.erase(v.end()-1);
+    v.insert(v.begin(),temp);
 }
 
 int main() {
@@ -115,10 +115,14 @@ int main() {
 
     maxmindiff(numbers);
 
-    zeroend(numbers);
-    printvector(numbers);
-
     rmconsdup(numbers);
     printvector(numbers);
+
+    leroby1(numbers);
+    printvector(numbers);
+
+    riroby1(numbers);
+    printvector(numbers);
+
     return 0;
 }
