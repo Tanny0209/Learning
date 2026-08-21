@@ -1,5 +1,6 @@
 #include <iostream>
 #include<vector>
+#include <climits>
 using namespace std;
 
 void takeVector(vector<int> &v,int size)
@@ -98,6 +99,27 @@ void riroby1(vector<int> &v)
     v.insert(v.begin(),temp);
 }
 
+
+void secsmall(vector<int> &v)
+{
+    int min = v[0];
+    int secmin =INT_MAX;
+
+    for(int i=1; i<v.size(); i++)
+    {
+        if(v[i]<min)
+        {
+            secmin=min;
+            min=v[i];
+        }
+        else if(v[i] < secmin && v[i] != min)
+        {
+            secmin = v[i];
+        }
+    }
+    cout << "Second smallest: " << secmin;
+}
+
 int main() {
 
     int size;
@@ -123,6 +145,8 @@ int main() {
 
     riroby1(numbers);
     printvector(numbers);
+
+    secsmall(numbers);
 
     return 0;
 }
