@@ -14,24 +14,24 @@ int main() {
     // Scope of variables
 
     // A variable declared INSIDE { } only exists within that block of code.
+    cout << "\n--- Local Scope Example ---" << endl;
     {
-        cout << "Local Scope Example:- \n";
         int localVariable = 10; // LOCAL variable: born here, destroyed at the
                                 // closing brace two lines below.
-        cout << "Local Variable: " << localVariable <<"\n"<< endl;
+        cout << "Local Variable: " << localVariable << endl;
         // This closing brace ends the block, so localVariable no longer
         // exists. Using it after this point would be a compile error.
     }
 
     // This variable is declared in main(), outside any inner block, so it is
     // visible everywhere inside main() until the function's closing brace.
-    cout << "Global Scope Example:- \n";
+    cout << "\n--- Global Scope Example ---" << endl;
     int globalVariable = 20; // Function-local to main(): "global" only from
                              // main()'s point of view. A TRULY global
                              // variable would be declared ABOVE main(),
                              // outside every function, and would be visible
                              // to the whole file.
-    cout << "Global Variable: " << globalVariable <<"\n";
+    cout << "Global Variable: " << globalVariable << endl;
 
     return 0;
 }

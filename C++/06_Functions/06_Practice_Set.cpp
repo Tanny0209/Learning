@@ -75,10 +75,10 @@ void evensort(int arr[],int size)
     }
 
     // Print the rearranged array.
-    cout<<"Sorted array is :- ";
+    cout << "Sorted array is :- ";
     for (int i = 0; i < size; i++)
     {
-        cout<<temp[i]<<" ";
+        cout << temp[i] << " ";
     }
     cout<<endl;
 }
@@ -115,9 +115,17 @@ int main()
 
     int numbers[6]={1,2,3,4,5,6};   // Test array.
     int size=6;                     // Passed separately to the functions.
-    cout<< eo(7) <<endl;            // 7 is odd -> prints 0 (false).
-    cout << sorted(numbers,size)<<endl;   // 1..6 ascending -> prints 1 (true).
+
+    cout << "\n--- Even Odd Check ---" << endl;
+    cout << "Is 7 Even: " << eo(7) << endl;            // 7 is odd -> prints 0 (false).
+
+    cout << "\n--- Sorted Array Check ---" << endl;
+    cout << "Is Array Sorted: " << sorted(numbers,size) << endl;   // 1..6 ascending -> prints 1 (true).
+
+    cout << "\n--- Evensort (Evens First) ---" << endl;
     evensort(numbers,size);         // Prints: 2 4 6 1 3 5.
-    cout << second_max(numbers,size)<<endl;   // 5 is the second largest.
+
+    cout << "\n--- Second Maximum ---" << endl;
+    cout << "Second Maximum: " << second_max(numbers,size) << endl;   // 5 is the second largest.
     return 0;
 }

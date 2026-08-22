@@ -16,15 +16,16 @@ address = """123 Main Street """  # triple quotes: allows multi-line text
 
 # INDEXING: every character in a string has a position number (index).
 # Indexes start at 0: "tanmay" -> t=0, a=1, n=2, m=3, a=4, y=5.
-print(name[2]) # print the character at index 2 (n)
-print(name[0:3]) #print first 3 characters (Tan)
+print("\n--- Indexing and Slicing ---")
+print("Character at index 2:", name[2]) # print the character at index 2 (n)
+print("First 3 characters:", name[0:3]) #print first 3 characters (Tan)
 # SLICING with [start:end]: returns chars from "start" up to but NOT
 # including "end". So [0:3] gives index 0,1,2 -> "tan". (Note: output says
 # "Tan" only because name is lowercase "tan"; "t" is not a capital T.)
 
-print(surname[:4]) #print first 4 characters (Pawa)
+print("First 4 characters:", surname[:4]) #print first 4 characters (Pawa)
 # [start:end] with no start means "from the beginning": [:4] == [0:4].
-print(surname[-4:]) #print last 4 characters (awar)
+print("Last 4 characters:", surname[-4:]) #print last 4 characters (awar)
 # NEGATIVE INDEXING counts from the end: -1 is the LAST character (-1='r',
 # -2='a', -3='w', -4='a'). [-4:] means "from index -4 to the end" -> "awar".
 # Slicing beyond the end is safe - Python just stops at the last character.
@@ -33,25 +34,27 @@ print(surname[-4:]) #print last 4 characters (awar)
 # Slicing with a STEP: [start:end:step] grabs every "step"-th character.
 #   start=0, end=8, step=2 -> indexes 0,2,4,6. For "123 Main Street" that is
 #   characters '1','3',' ','M' (shown below as "1 a t" space in comment).
-print(address[0:8:2]) #print every 2nd character from index 0 to 8 (1 a t)
+print("\n--- Slicing with a Step ---")
+print("Every 2nd character from index 0 to 8:", address[0:8:2]) #print every 2nd character from index 0 to 8 (1 a t)
 
-# Fucntions of strings
+# Functions of strings
 # These methods are BUILT INTO strings - I call them with dot notation:
 #   string_name.method_name(arguments). They never modify the original
 #   string (immutable!); instead they RETURN a new result I can print/use.
-print(len(address)) #print the length of the string (17)
+print("\n--- Built-in String Methods ---")
+print("Length of address:", len(address)) #print the length of the string (17)
 # len() counts the TOTAL characters including spaces: "123 Main Street " is 17.
-print(address.endswith("Street ")) #print True if the string ends with "Street "
+print("Address ends with 'Street ':", address.endswith("Street ")) #print True if the string ends with "Street "
 # endswith() checks the final characters and returns True or False.
-print(surname.count("a")) #print the number of times "a" appears in the string (2)
+print("Count of 'a' in surname:", surname.count("a")) #print the number of times "a" appears in the string (2)
 # count() counts how many times a substring appears -> "Pawar" has two 'a's.
-print(name.capitalize()) #print the string with the first character capitalized (Tanmay)
+print("Capitalized name:", name.capitalize()) #print the string with the first character capitalized (Tanmay)
 # capitalize() makes the FIRST letter uppercase and the rest lowercase.
-print(surname.find("w")) #print the index of the first occurrence of "w" (3)
+print("Index of first 'w' in surname:", surname.find("w")) #print the index of the first occurrence of "w" (3)
 # find() returns the INDEX where the substring first appears. For "Pawar":
 # indexes are P=0, a=1, w=2, a=3, r=4, so find("w") actually returns 2.
 # If the substring is not found, find() returns -1.
-print(address.replace("Main", "Broadway")) #replace "Main" with "Broadway" in the string (123 Broadway Street )
+print("Address after replacing 'Main':", address.replace("Main", "Broadway")) #replace "Main" with "Broadway" in the string (123 Broadway Street )
 # replace(old, new) swaps every occurrence of "Main" for "Broadway" and
 # returns the new string. The original address stays unchanged.
 

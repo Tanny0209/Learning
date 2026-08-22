@@ -15,7 +15,8 @@ int main()
 
     // [] operator: reads the element at index 2 (the third one, value 30).
     // Works just like a plain array.
-    cout << numbers[2] << endl;
+    cout << "\n--- Reading With [] ---" << endl;
+    cout << "Element at index 2: " << numbers[2] << endl;
 
     
     // [] operator can also be used on the LEFT side to change a value:
@@ -23,14 +24,16 @@ int main()
     numbers[2] = 300;
 
     // Verify the change: now prints 300 instead of 30.
-    cout << numbers[2]<<endl;
+    cout << "\n--- Writing With [] ---" << endl;
+    cout << "Element at index 2 after writing: " << numbers[2] << endl;
 
     // .at() is a member function that does the same thing as [] but with
     // an extra safety check: it throws an exception if the index is out of
     // range. Good when the index comes from user input I don't trust.
-    cout << numbers.at(4)<<endl;
+    cout << "\n--- Accessing With .at() ---" << endl;
+    cout << "Element at index 4: " << numbers.at(4) << endl;
     numbers.at(4) = 78;
-    cout << numbers.at(4)<<endl;
+    cout << "Element at index 4 after writing: " << numbers.at(4) << endl;
 
     return 0;
 }

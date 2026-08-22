@@ -16,6 +16,7 @@ import pyjokes
 #   pyjokes.get_joke() -> "pyjokes" is the library name,
 #   "." separates the library from its function, and "get_joke()" runs it.
 # The returned joke (a string) is stored in the variable "joke".
+print("\n--- Importing a Package ---")
 joke=pyjokes.get_joke()
 # print() displays whatever the joke variable holds on the screen.
-print(joke)
+print("Joke:", joke)

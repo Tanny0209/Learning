@@ -3,6 +3,7 @@
 
 # --- 1. Writing and Reading Binary Data ---
 
+print("\n--- Writing and Reading Binary Data ---")
 data = b"Hello"  # b prefix creates a bytes object (raw binary data)
 
 # "wb" = write binary mode (creates/overwrites file)
@@ -11,10 +12,11 @@ with open("Python/05_File_Handling/00_Binary.bin", "wb") as file:
 
 # "rb" = read binary mode
 with open("Python/05_File_Handling/00_Binary.bin", "rb") as file2:
-    print(file2.read())  # reads entire file as bytes
+    print("Binary data read back:", file2.read())  # reads entire file as bytes
 
 # --- 2. Copying a Binary File (Image) ---
 
+print("\n--- Copying a Binary File (Image) ---")
 
 # Read the entire PNG image as raw bytes
 with open("Python/05_File_Handling/00.png", "rb") as source:
@@ -25,6 +27,8 @@ with open("Python/05_File_Handling/2.png", "wb") as dest:
     dest.write(da)
 
 # --- 3. Appending Binary Data ---
+
+print("\n--- Appending Binary Data ---")
 
 # bytearray is like bytes but mutable (can be modified)
 dataarray = bytearray(b"\nABC")

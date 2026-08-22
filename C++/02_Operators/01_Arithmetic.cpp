@@ -15,6 +15,7 @@ int main() {
                       // in the division example below.
 
     // Addition: 10 + 3 = 13
+    cout << "\n--- Arithmetic Operations ---" << endl;
     int sum = a + b;
     cout << "Sum: " << sum << endl;
 
@@ -26,6 +27,7 @@ int main() {
     int product = a * b;
     cout << "Product: " << product << endl;
 
+    cout << "\n--- Integer Division Pitfall and the Fix ---" << endl;
     // INTEGER division: 10 / 3 = 3 because both a and b are ints. The
     // fractional part (.33) is simply TRUNCATED (cut off), even though the
     // answer is stored in a double - the damage already happened in /.
@@ -33,10 +35,11 @@ int main() {
     cout << "Quotient: " << quotient << endl;
     // FIX: I make at least one operand a double (here 10.0). Then C++
     // performs floating-point division and keeps the decimals: 10.0/3=3.33333.
-    cout<< "Quotient : "<<10.0/3<<endl;
+    cout << "Fixed Quotient: " << 10.0 / 3 << endl;
     
     // Modulus: gives the REMAINDER of integer division, 10 % 3 = 1.
     // (% only works on integers, not on doubles.)
+    cout << "\n--- Modulus Operator ---" << endl;
     int remainder = a % b;
     cout << "Remainder: " << remainder << endl;
 

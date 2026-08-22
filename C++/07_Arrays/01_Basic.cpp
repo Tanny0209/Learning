@@ -18,8 +18,9 @@ int main()
 
     /* IMPORTANT: array indices are ZERO-BASED. The first element lives at
        index 0, so "marks[1]" is the SECOND element (value 45 here), not the
-       first. Beginners (including me!) often make this mistake. */
-    cout<< marks[1]<<endl;
+        first. Beginners (including me!) often make this mistake. */
+    cout << "\n--- Reading An Element ---" << endl;
+    cout << "Element at index 1 (before update): " << marks[1] << endl;
 
     /* "marks[1]=46;" UPDATES the element at index 1. Arrays are mutable:
        I can read and also overwrite any existing element. After this line
@@ -27,6 +28,7 @@ int main()
     marks[1]=46;
 
     /* This prints 46, proving the value really was changed above. */
-    cout<< marks[1]<<endl;
+    cout << "\n--- Updating An Element ---" << endl;
+    cout << "Element at index 1 (after update): " << marks[1] << endl;
     return 0;
 }

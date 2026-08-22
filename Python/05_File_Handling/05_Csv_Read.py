@@ -8,6 +8,7 @@ import csv
 
 # Open the CSV file in "r" (read) mode like any normal text file.
 # A CSV file is just text, so all the file-handling rules I already know apply.
+print("\n--- Reading a CSV File ---")
 file = open("Python/05_File_Handling/00_Student.csv", "r")
 
 # csv.reader(file) wraps the file and splits each line of text into a LIST
@@ -20,7 +21,7 @@ reader = csv.reader(file)
 # (Notice everything comes back as strings — even numbers — so CSV data often
 # needs converting to int/float before doing math on it.)
 for row in reader:
-    print(row)
+    print("Row read from CSV:", row)
 
 # Close the file manually. (In the next lessons I'll see "with",
 # which closes the file automatically for me.)

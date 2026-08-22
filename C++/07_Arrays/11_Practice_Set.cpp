@@ -167,12 +167,13 @@ void evensort(int arr[],int size)
         }        
     }
     
-    cout<<"Sorted array is :- ";
+    cout << "\n--- Even First Ordering ---" << endl;
+    cout << "Sorted array is :- ";
     for (int i = 0; i < size; i++)
     {
-        cout<<temp[i]<<" ";
+        cout << temp[i] << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main()
@@ -182,12 +183,14 @@ int main()
        it to every function, because array parameters decay to pointers and
        the size cannot be deduced inside the callee. */
     int size=sizeof(numbers) / sizeof(numbers[0]);
-    cout<<"Sum of the array element is "<<sum(numbers,size)<<endl;
-    cout<<"Average of the array element is "<<avg(numbers,size)<<endl;
-    cout<<"Even numbers in the array element is "<<even(numbers,size)<<endl;
-    cout<<"Maximun number in the array element is "<<max(numbers,size)<<endl;
-    cout<<"Second Maximun number in the array element is "<<second_max(numbers,size)<<endl;
-    cout<<"Element are sorted = "<<sorted(numbers,size)<<endl;
+
+    cout << "\n--- Practice Set Results ---" << endl;
+    cout << "Sum of the array element is " << sum(numbers,size) << endl;
+    cout << "Average of the array element is " << avg(numbers,size) << endl;
+    cout << "Even numbers in the array element is " << even(numbers,size) << endl;
+    cout << "Maximum number in the array element is " << max(numbers,size) << endl;
+    cout << "Second Maximum number in the array element is " << second_max(numbers,size) << endl;
+    cout << "Elements are sorted = " << sorted(numbers,size) << endl;
     evensort(numbers,size);
 
     return 0;

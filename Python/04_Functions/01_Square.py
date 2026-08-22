@@ -17,12 +17,14 @@ def greet(name):
     return f"Good Morning {name}"
 
 
+print("\n--- Greet Function ---")
 name=input("Enter your Name : ")
 g=greet(name)
-print(g)
+print("Greeting:", g)
 
 # The value passed in (here: the user's number) is called an "argument".
 # Inside square it is known by the parameter name "a".
+print("\n--- Square Function ---")
 a=int(input("Enter number which you want square : "))
 s=square(a)
-print(s)
+print("Square result:", s)

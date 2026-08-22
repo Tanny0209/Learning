@@ -25,6 +25,33 @@ int main()
     // Fill constructor: 5 elements, ALL filled with the value 100.
     // So fourth == {100,100,100,100,100}. Great for making a "pad" array.
     vector<int> fourth(5,100);
-    
+
+    // Show what each declaration actually created:
+    cout << "\n--- Declaration Methods ---" << endl;
+
+    // first is empty (size 0), so there are no elements to print.
+    cout << "First (default construction) size = " << first.size() << endl;
+
+    cout << "Second (initializer list): ";
+    for(int i = 0; i < second.size(); i++)
+    {
+        cout << second[i] << " ";
+    }
+    cout << endl;
+
+    cout << "Third (size constructor): ";
+    for(int i = 0; i < third.size(); i++)
+    {
+        cout << third[i] << " ";
+    }
+    cout << endl;
+
+    cout << "Fourth (fill constructor): ";
+    for(int i = 0; i < fourth.size(); i++)
+    {
+        cout << fourth[i] << " ";
+    }
+    cout << endl;
+
     return 0;
 }

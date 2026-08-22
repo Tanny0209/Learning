@@ -19,6 +19,7 @@ int main()
     // elements are value-initialized (0 for int) because no value given.
     numbers.resize(5);
 
+    cout << "\n--- Resize (Grow) ---" << endl;
     cout << "After growing: ";
 
     // Range-based for loop: `int x` takes a COPY of each element in order,
@@ -31,12 +32,13 @@ int main()
     // Shrink to 2 elements: the last 3 are deleted, leaving {1,2}.
     numbers.resize(2);
 
+    cout << "\n--- Resize (Shrink) ---" << endl;
     cout << "After shrinking: ";
 
     // Walk the shrunken vector the same way and print 1, 2.
     for(int x : numbers)
         cout << x << " ";
 
-    cout<<endl;
+    cout << endl;
     return 0;
 }

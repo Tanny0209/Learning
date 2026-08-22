@@ -22,6 +22,8 @@ void greet(string name = "Guest")
 
 int main()
 {
+    cout << "\n--- Calling With Default Argument ---" << endl;
+
     // No argument passed, so name gets the default value "Guest".
     // Prints: Hello Guest
     greet();

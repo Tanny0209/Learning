@@ -13,12 +13,16 @@ using namespace std;
 
 int main()
 {
+    cout << "\n--- Counting From 0 To 10 ---" << endl;
+
     // Loop that prints 0,1,2,...,10 on separate lines.
     // i starts at 0, runs while i<=10, and i++ adds 1 after each pass.
     for (int i = 0; i <= 10; i++)
     {
-        cout << i<<"\n";
+        cout << "Number: " << i << "\n";
     }
+
+    cout << "\n--- Star Pattern ---" << endl;
 
 // Star Pattern
     // Nested for loop: a loop INSIDE another loop.
@@ -29,11 +33,13 @@ int main()
         // It prints s1+1 stars, so row 0 has 1 star, row 1 has 2, etc.
         for (int s2 = 0; s2 < s1+1; s2++)
         {
-            cout<<"*";
+            cout << "*";
         }
         // After each row of stars, move to a new line.
         cout << endl;
     }
+
+    cout << "\n--- Factorial ---" << endl;
 
     // Factorial: n! = 1*2*3*...*n, e.g. 5! = 120.
     int num;
@@ -44,7 +50,9 @@ int main()
     {
         total*=fact;               // total = total * fact (multiply each number in).
     }
-    cout<<total<<endl;
+    cout << "Factorial: " << total << endl;
+
+    cout << "\n--- Sum ---" << endl;
 
     // sum: adds all numbers from 1 to num2 (1+2+3+...+num2).
     // Note: this is nearly identical to factorial, but starts at 0 and ADDS.
@@ -56,7 +64,7 @@ int main()
     {
         sum+=fact;                 // sum = sum + fact (accumulate the total).
     }
-    cout<<sum<<endl;
+    cout << "Sum: " << sum << endl;
 
 
     return 0;   // 0 signals to the OS that the program ran successfully.

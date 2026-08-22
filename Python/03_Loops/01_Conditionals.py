@@ -10,6 +10,7 @@
 
 # input() always returns text (a string), so I must wrap it in int() to
 # convert the typed answer into a number I can compare with >= and <.
+print("\n--- Voting Eligibility ---")
 a=int(input("Enter your age: "))
 
 # The "if" block runs ONLY when the condition a>=18 is True (age 18 or more).
@@ -31,6 +32,7 @@ else:
 # Multiple If-Else Statements
 
 #  this program will print 2 grade if I enter marks which satisfy the both if conditions.
+print("\n--- Multiple If-Else Statements ---")
 b=int(input("Enter your marks: "))
 
 # NOTE: this "if" block is NOT connected to the if/else below it, because

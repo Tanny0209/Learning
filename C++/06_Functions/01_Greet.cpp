@@ -16,11 +16,13 @@ using namespace std;
 // DEFINITION of welcome(): no parameters, returns nothing (void).
 void welcome()
 {
-    cout<<"Good Morning\n";
+    cout << "Good Morning\n";
 }
 
 int main()
 {
+    cout << "\n--- Calling A Function ---" << endl;
+
     // CALL (or invocation): jumps into welcome(), runs its body,
     // then returns to this line and continues. main() does this FIRST,
     // even though welcome() is defined above it in the file.

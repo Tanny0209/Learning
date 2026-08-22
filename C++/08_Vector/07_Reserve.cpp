@@ -24,9 +24,10 @@ int main()
     numbers.reserve(10);
 
     // Size is still 0 -- no elements were created, only memory was set aside.
-    cout << "Size = " << numbers.size() << endl;
+    cout << "\n--- Reserve ---" << endl;
+    cout << "Size after reserve = " << numbers.size() << endl;
     // Capacity is at least 10 -- room to grow without re-allocating.
-    cout << "Capacity = " << numbers.capacity() << endl;
+    cout << "Capacity after reserve = " << numbers.capacity() << endl;
 
     return 0;
 }

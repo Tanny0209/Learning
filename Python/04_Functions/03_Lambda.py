@@ -10,6 +10,7 @@
 # passing into other functions (like sort, filter, map).
 
 # Lambda 
+print("\n--- Lambda Function ---")
 square = lambda x: x*x
 
-print(square(5))
+print("Square of 5:", square(5))

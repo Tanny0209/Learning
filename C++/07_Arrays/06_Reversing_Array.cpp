@@ -41,6 +41,8 @@ int main()
     }
 
     // Traverse the now-reversed array and print every element.
+    cout << "\n--- Reversed Array Elements ---" << endl;
+
     for (int index = 0; index < 5; index++)
     {
         cout << numbers[index] << endl;

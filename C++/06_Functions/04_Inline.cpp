@@ -24,8 +24,10 @@ inline int square(int x){return x * x;}
 
 int main()
 {
+    cout << "\n--- Inline Function Call ---" << endl;
+
     // With inlining, this effectively becomes: cout << (5 * 5) << endl;
-    cout << square(5) << endl;
+    cout << "Square of 5: " << square(5) << endl;
 
     return 0;
 }

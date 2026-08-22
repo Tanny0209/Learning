@@ -14,6 +14,7 @@ int main() {
     int b = 20;
 
     // Comparison operators - each line prints 1 (true) or 0 (false).
+    cout << "\n--- Comparison Operators ---" << endl;
     cout << "a == b: " << (a == b) << endl; // == Equal to: 10==20 -> false (0)
     cout << "a != b: " << (a != b) << endl; // != Not equal to: 10!=20 -> 1
     cout << "a < b: " << (a < b) << endl;   // < Less than: 10<20 -> 1

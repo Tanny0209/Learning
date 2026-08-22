@@ -8,6 +8,7 @@
 # Each branch checks "am I bigger than all three others?". The "and"
 # operator requires every comparison to be True. The final else assumes
 # it must be d, since if none of a,b,c was biggest, d is the only one left.
+print("\n--- Find Greatest Of Four Numbers ---")
 a=int(input("Enter first number: "))
 b=int(input("Enter second number: "))
 c=int(input("Enter third number: "))
@@ -27,6 +28,7 @@ else:
 # Average percentage = (sum of marks) / (number of subjects). The condition
 # chains FOUR tests with "and" - ALL of them must be True to pass: every
 # single subject at least 33 AND the average strictly above 40.
+print("\n--- Check Pass Or Fail ---")
 e=int(input("Enter marks of Maths subject: "))
 f=int(input("Enter marks of English subject: "))
 g=int(input("Enter marks of Science subject: "))
@@ -43,14 +45,16 @@ else:
 # print even numbers
 # range(1,101) gives 1..100. The % operator (remainder) tells me evenness:
 # i%2==0 means i divides by 2 exactly, so i is even.
+print("\n--- Print Even Numbers ---")
 for i in range(1,101):
     if i%2==0:
-        print(i)
+        print("Even number:", i)
 
 
 # print multiplication table of a number
 # f-strings let me embed values directly into text with {braces}.
 # One loop prints all 10 rows of the table for the typed-in number.
+print("\n--- Multiplication Table Of A Number ---")
 mul=int(input("Enter a number to print multiplication table: "))
 for i in range(1,11):
     print(f"{mul} x {i} = {mul*i}")
@@ -60,6 +64,7 @@ for i in range(1,11):
 # n! = n * (n-1) * ... * 2 * 1. I multiply the accumulator by every number
 # from 1 up to num. Starting from 1 is essential - starting from 0 would
 # wipe the product out to 0.
+print("\n--- Factorial ---")
 num=int(input("Enter a number to find factorial: "))
 factorial=1
 for i in range (1,num+1):
@@ -71,6 +76,7 @@ print(f"Factorial of {num} is: {factorial}")
 # Count digits in a number
 # Trick: turn the number into a string with str(number), then a for loop
 # naturally walks through each character. Counting loop iterations = digits.
+print("\n--- Count Digits In A Number ---")
 number=int(input("Enter a number to count digits: "))
 count =0
 
@@ -84,6 +90,7 @@ print(f"Count of digits in {number} is: {count}")
 # I build rev backwards: rev = (rev * 10) + digit, so 123 -> 3 -> 32 -> 321.
 # Note //= is integer division: 123 // 10 = 12 (fraction dropped), which is
 # exactly what I need to peel digits off an integer.
+print("\n--- Reverse A Number ---")
 rev_number=int(input("Enter a number to reverse: "))
 rev=0
 
@@ -99,6 +106,7 @@ print(f"Reverse of the number is: {rev}")
 # A palindrome reads the same forwards and backwards (like 1221). I save the
 # original in temp, reverse a COPY into rev (so the original is untouched),
 # then compare the two.
+print("\n--- Palindrome Check ---")
 palindrome_number=int(input("Enter a number to check palindrome: "))
 temp=palindrome_number
 rev=0
@@ -117,6 +125,7 @@ else:
 # Same digit-peeling loop, but now I compare each digit against the best one
 # found so far and remember it. largest_digit starts at 0 because every digit
 # is 0-9, so any digit will beat it.
+print("\n--- Find Largest Digit In A Number ---")
 largest_digit_number=int(input("Enter a number to find largest digit: "))
 largest_digit=0
 
@@ -132,6 +141,7 @@ print(f"Largest digit in the number is: {largest_digit}")
 # An Armstrong number (3 digits) equals the sum of its digits each raised to
 # the third power, e.g. 153 = 1^3 + 5^3 + 3^3. ** is the power operator, so
 # digit**3 means digit cubed.
+print("\n--- Armstrong Number Check ---")
 arms_num = int(input("Enter a number to check if it is a armstrong number: "))
 sum=0
 temp=arms_num       
@@ -153,6 +163,7 @@ else:
 # to prime_num-1. If ANY divides evenly (remainder 0) it is not prime and I
 # break out early. The "else" attached to a for loop is special: it runs only
 # when the loop finishes WITHOUT a break - i.e. when no divisor was found.
+print("\n--- Prime Number Check ---")
 prime_num=int(input("Enter a number to check if it is prime or not: "))
 if prime_num>1:
     for i in range(2,prime_num):
@@ -167,6 +178,7 @@ if prime_num>1:
 # Find how mnay even and odd digit in the number
 # One loop does double duty: peel off a digit, check if the DIGIT (not the
 # whole number) is even, and bump the matching counter.
+print("\n--- Count Even And Odd Digits ---")
 e_o_num = int(input("Enter the number : "))
 temp=e_o_num
 even_count=0

@@ -14,12 +14,14 @@ using namespace std;
 
 int main ()
 {
+    cout << "\n--- While Loop Counting ---" << endl;
+
     int i = 1;      // Initialize the counter BEFORE the loop.
 
     // Check condition first: is i <= 5? If yes, run the body.
     while(i <= 5)
     {
-        cout << i << endl;
+        cout << "Count: " << i << endl;
         i++;        // CRITICAL: increase i so the loop eventually stops.
     }
     // When i becomes 6, the condition i<=5 is false and the loop exits.

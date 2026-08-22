@@ -38,9 +38,11 @@ int main()
     }
 
     // Traverse the finished merged array to show the result: 1 2 3 4 5 6.
+    cout << "\n--- Merged Array Elements ---" << endl;
+
     for (int i = 0; i < 6; i++)
     {
-        cout<<merged[i]<<endl;
+        cout << merged[i] << endl;
     }
     
     return 0;

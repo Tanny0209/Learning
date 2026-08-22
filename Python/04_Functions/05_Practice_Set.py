@@ -20,7 +20,7 @@ def fact(n):
     sum = 1
     for i in range(1,n+1):
         sum*=i
-    print(sum)
+    print("Factorial:", sum)
 
 
 # Reverse number
@@ -32,14 +32,17 @@ def reverse(n):
         digit = n%10
         rev=(rev*10)+digit
         n//=10
-    print(rev)
+    print("Reversed number:", rev)
 
 # Now I actually CALL the functions - a function does nothing until called.
 num=int(input("Enter number : "))
+print("\n--- Odd Even Checker ---")
 eo(num)
+print("\n--- Factorial ---")
 fact(num)
 
 rev=int(input("Enter number which you want reverse : "))
+print("\n--- Reverse Number ---")
 reverse(rev)
 
 # Palindrome 
@@ -60,4 +63,5 @@ def palindrome(n):
         print("Number is not a palindrome")
 
 pal=int(input("Enter number to check palindrome : "))
+print("\n--- Palindrome ---")
 palindrome(pal)

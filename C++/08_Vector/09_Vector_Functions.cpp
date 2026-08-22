@@ -14,6 +14,7 @@ int main()
 {
     vector<int> numbers = {1,2,3,4};
 
+    cout << "\n--- Clear ---" << endl;
     cout << "Before clear:" << endl;
     cout << "Size = " << numbers.size() << endl;
 
@@ -27,6 +28,7 @@ int main()
     // The vector is reusable after clear(): add a single element again.
     numbers.push_back(100);
 
+    cout << "\n--- Push Back And Front ---" << endl;
     // front() = first element, which is now the 100 I just pushed.
     cout << "First element = " << numbers.front() << endl;
 
@@ -43,29 +45,36 @@ int main()
     numbers.erase(numbers.begin()+2);
 
     // Print the current contents: 10 100.
+    cout << "\n--- Insert And Erase ---" << endl;
+    cout << "Vector contents after insert and erase: ";
     for(int x : numbers)
         cout << x << " ";
 
         
-    cout<<"\n";
+    cout << endl;
     // assign(count, value) REPLACES all contents with `count` copies of
     // `value`. Here: {50,50,50,50} -- size and contents both change.
+    cout << "\n--- Assign ---" << endl;
     numbers.assign(4,50);
+    cout << "After assign(4, 50): ";
     for(int x : numbers)
-        cout<< x << " ";
+        cout << x << " ";
 
-    cout<< endl;
+    cout << endl;
 
     // Clear again, then assign 5 copies of 45: {45,45,45,45,45}.
     numbers.clear();
     numbers.assign(5,45);
+    cout << "After clear and assign(5, 45): ";
     for(int x : numbers)
-          cout <<x<<" ";
+        cout << x << " ";
 
-    cout <<endl;
+    cout << endl;
     // Redundant second print of the same {45,45,45,45,45} -- just repeats
     // the output to show the loop works on any vector state.
+    cout << "Same vector printed again: ";
     for (int x: numbers)
-        cout<<x<<" ";
+        cout << x << " ";
+    cout << endl;
     return 0;
 }

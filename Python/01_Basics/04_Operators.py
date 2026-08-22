@@ -6,7 +6,7 @@
 # Arithemtic Operators
 # These perform basic math on numbers: + (add), - (subtract), * (multiply),
 # / (divide), % (remainder), ** (power/exponent), // (integer division).
-print("\nArithemtic Operators \n")
+print("\n--- Arithmetic Operators ---")
 a=10
 b=5
 c= a + b  # "c" stores the result of adding a and b: 10 + 5 = 15
@@ -17,7 +17,7 @@ print("Addition of A and B is ", c)
 # Shorthand versions combine "=" with a math operator:
 #   +=  -> add then assign,  -=  -> subtract then assign,  *=  -> multiply then assign
 #   Example: e += 3 is exactly the same as writing e = e + 3.
-print("\n Assignment Operators \n")  #\n is used to print a new line
+print("\n--- Assignment Operators ---")  #\n is used to print a new line
 d=4-2 #assign 4-2 in d
 # Python evaluates the right side (4-2 = 2) first, then stores the result in d.
 e=6
@@ -31,7 +31,7 @@ print("Value of e:", e)
 # This operator is used to compare two values and returns True or False based on the condition.
 # Common ones: < (less than), > (greater than), <=, >=, == (equal to), != (not equal to).
 # NOTE: "==" checks equality, while a single "=" is only for assignment.
-print("\n Comparison Operators \n")
+print("\n--- Comparison Operators ---")
 f= 5<4
 # Python asks "is 5 less than 4?" The answer is False, so f stores False.
 print("Is 5 less than 4? ", f)
@@ -48,7 +48,7 @@ print("Is 5 equal to 5? ", g)
 #   or  -> True if AT LEAST ONE side is True
 #   not -> flips a value (True becomes False and vice versa)
 
-print("\n Logical Operators \n")
+print("\n--- Logical Operators ---")
 # Truth Table for OR operator
 # OR is like a light switch: if either switch is on, the light is on.
 # Here I can see or returns True unless BOTH operands are False.

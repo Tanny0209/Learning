@@ -8,6 +8,7 @@
 #   - I can NOT forget to close it, so resources are always freed and written
 #     data is always flushed to disk.
 # The object returned by open() is assigned to the name "file" via "as".
+print("\n--- Reading a File with 'with open' ---")
 with open ("Python/05_File_Handling/00_Text.txt","r") as file :
     # Everything indented under "with" is inside the block where "file" is open.
     # "r" mode means read: I read the whole file into the string "data".
@@ -16,4 +17,4 @@ with open ("Python/05_File_Handling/00_Text.txt","r") as file :
 
 # I am now OUTSIDE the "with" block. The file is already closed,
 # but the data I read is still safe in the "data" variable.
-print(data)
+print("File content read with 'with':", data)

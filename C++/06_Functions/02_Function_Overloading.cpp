@@ -53,15 +53,21 @@ void display(char grade, int number)
 
 int main()
 {
+    cout << "\n--- Overloading By Number Of Arguments ---" << endl;
+
     // Both args are int -> matches overload 1 (int, int): prints 8.
-    cout << add(5, 3) << endl;
+    cout << "Sum of Two Ints: " << add(5, 3) << endl;
 
     // Three int args -> matches overload 2 (int, int, int): prints 10.
-    cout << add(5, 3, 2)<<endl;
+    cout << "Sum of Three Ints: " << add(5, 3, 2) << endl;
+
+    cout << "\n--- Overloading By Data Types ---" << endl;
 
     // Args are double literals -> matches overload 3: prints 8.7.
     // (5 and 3.2 typed as 5.5/3.2 with decimals are doubles.)
-    cout << add(5.5, 3.2)<< endl;
+    cout << "Sum of Two Doubles: " << add(5.5, 3.2) << endl;
+
+    cout << "\n--- Overloading By Parameter Order ---" << endl;
 
     // int then char -> matches the FIRST display (int, char).
     display(10, 'A');

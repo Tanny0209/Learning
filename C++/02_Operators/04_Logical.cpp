@@ -14,18 +14,21 @@ int main() {
 
     // Logical AND (&&): true ONLY when BOTH sides are true.
     // 5<10 (true) AND 10<15 (true) -> the whole condition is true.
+    cout << "\n--- Logical AND (&&) ---" << endl;
     if (a < b && b < c) {
         cout << "Both conditions are true." << endl;
     }
 
     // Logical OR (||): true when AT LEAST ONE side is true.
     // 5>10 (false) OR 10<15 (true) -> still true overall.
+    cout << "\n--- Logical OR (||) ---" << endl;
     if (a > b || b < c) {
         cout << "At least one condition is true." << endl;
     }
 
     // Logical NOT (!): flips the truth value of what follows it.
     // !(a > b) = !(5 > 10) = !(false) = true, so the if runs.
+    cout << "\n--- Logical NOT (!) ---" << endl;
     if (!(a > b)) {
         cout << "Condition is false." << endl;
     }

@@ -9,8 +9,10 @@
 # can even change type later. I never declare a type; Python figures it out
 # from the value I assign.
 
+print("\n--- Variables ---")
+
 a=30 #This  a is a variable it stores the value 30
-print(a)
+print("Value of a:", a)
 
 # Naming rules for variables:
 #   - Must start with a letter (a-z, A-Z) or underscore (_), NOT a number.
@@ -27,27 +29,32 @@ print(a)
 # the type of any value.
 
 # 1. int store whole numbers (no decimal point, e.g. 10, -5, 0)
+print("\n--- Data Type: int ---")
 a=10
-print(type(a)) #This will print the data type of variable a
+print("Type of a:", type(a)) #This will print the data type of variable a
 # type(a) returns <class 'int'> which Python prints to tell me a is an integer.
 
 # 2. float store decimal numbers (numbers with a fractional part)
+print("\n--- Data Type: float ---")
 b=10.5
-print(type(b))
+print("Type of b:", type(b))
 # Even 10.0 is a float, not an int, because of the decimal point.
 
 # 3. str store text (sequences of characters wrapped in single or double quotes)
+print("\n--- Data Type: str ---")
 c="Hello, World!"
-print(type(c))
+print("Type of c:", type(c))
 # Strings are used for words, sentences, names, messages, etc.
 
 # 4. bool store boolean values (logical: True or False only)
+print("\n--- Data Type: bool ---")
 d=True
-print(type(d))
+print("Type of d:", type(d))
 # Booleans are the result of comparisons (e.g. 5 > 3) and drive if/else decisions.
 
 #5. none store the absence of a value (think of it as an empty/null marker)
+print("\n--- Data Type: None ---")
 e=None
-print(type(e))
+print("Type of e:", type(e))
 # None is often used to say "this variable exists but holds nothing yet."
 # Note: None, True, False all start with a capital letter in Python.

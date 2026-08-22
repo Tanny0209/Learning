@@ -37,8 +37,9 @@ int main()
             minimum=numbers[i];
         }
     }
-    cout<<"Maximum no among them is : "<<maximum<<endl;
-    cout<<"Minimum no among them is : "<<minimum<<endl;
+    cout << "\n--- Maximum And Minimum ---" << endl;
+    cout << "Maximum number among them is : " << maximum << endl;
+    cout << "Minimum number among them is : " << minimum << endl;
 
     return 0;
 }

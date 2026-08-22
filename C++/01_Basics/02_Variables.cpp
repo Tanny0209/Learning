@@ -27,6 +27,7 @@ int main() {
 
 
     // OUTPUT: cout prints each piece in order, left to right, chained by <<.
+    cout << "\n--- Data Types Output ---" << endl;
     cout << "Name: " << name << endl; // endl inserts a newline AND flushes
                                       // the output buffer (same effect as \n).
     cout << "Age: " << age << endl;

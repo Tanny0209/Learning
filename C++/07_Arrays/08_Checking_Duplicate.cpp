@@ -24,14 +24,16 @@ int main()
        matches j=4 (5), so "Duplicate Found OF No 5" prints once.
 
        COMPLEXITY: O(n^2) because for n elements I make roughly n*n/2
-       comparisons - fine for small arrays, slow for huge ones. */
+        comparisons - fine for small arrays, slow for huge ones. */
+    cout << "\n--- Checking For Duplicates ---" << endl;
+
     for (int i = 0; i < 6; i++)
     {
         for (int j = i+1; j < 6; j++)
         {
             if (numbers[i]==numbers[j])
             {
-                cout<<"Duplicate Found OF No " <<numbers[i] <<endl;
+                cout << "Duplicate Found Of Number " << numbers[i] << endl;
             }
             
         }

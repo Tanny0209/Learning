@@ -22,7 +22,7 @@ int main() { // Entry point: every C++ program must have exactly ONE main().
     // cout is the standard OUTPUT stream ("character output"). The << is the
     // "insertion" operator: it pushes the string into the stream so that it
     // gets printed to the console.
-    cout <<"Hello , World !";
+    cout << "Hello , World !" << endl;
     return 0; // Sends exit code 0 back to the operating system, meaning
               // "finished successfully". A nonzero code signals an error.
 };

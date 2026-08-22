@@ -32,7 +32,8 @@ int main()
         }
         
     }
-    cout<<target<<" is repeated "<<counter<<endl;
+    cout << "\n--- Counting Frequency ---" << endl;
+    cout << target << " is repeated " << counter << " times" << endl;
 
     return 0;
 }

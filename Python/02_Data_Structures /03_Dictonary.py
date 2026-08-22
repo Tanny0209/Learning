@@ -18,36 +18,38 @@ marks={
     92: "Shubham"  #this is also valid, key can be of any data type
 }
 
-print(marks,type(marks))
+print("\n--- Creating and Accessing a Dictionary ---")
+print("Dictionary and its type:", marks, type(marks))
 # Passing two arguments: the dict itself, then type(marks) which returns
 # <class 'dict'>.
 
-print(marks["Tanmay"]) # Accessing value using key
+print("Value for key 'Tanmay':", marks["Tanmay"]) # Accessing value using key
 # Square brackets with a KEY return that key's value. Here -> 100.
 # WARNING: using a key that doesn't exist (e.g. marks["John"]) raises a
 # KeyError and crashes the program.
 
-# Dictonary Methods
+# Dictionary Methods
 # These methods are built into every dictionary.
 
-print(marks.items()) # Returns all the key-value pairs in the dictionary
+print("\n--- Dictionary Methods ---")
+print("All key-value pairs:", marks.items()) # Returns all the key-value pairs in the dictionary
 # items() gives a view of (key, value) pairs as tuples, e.g.
 # dict_items([('Tanmay', 100), ('Rahul', 95), ...]).
-print(marks.keys()) # Returns all the keys in the dictionary
+print("All keys:", marks.keys()) # Returns all the keys in the dictionary
 # keys() lists every key: Tanmay, Rahul, Priya, 92.
-print(marks.values()) # Returns all the values in the dictionary
+print("All values:", marks.values()) # Returns all the values in the dictionary
 # values() lists every value: 100, 95, 98, Shubham.
 marks.update({"Tanmay": 99, "Jhon": 97}) # Adding new key-value pair to the dictionary
 # update() merges another dict into marks. Two things happen at once:
 #   - "Tanmay" already exists, so its value CHANGES from 100 to 99.
 #   - "Jhon" is new, so the pair ("Jhon", 97) is ADDED.
-print(marks)
+print("Dictionary after update:", marks)
 
 
 marks.get("Rahul") # Returns the value for the specified key
 # get() is the SAFE way to fetch a value. Unlike marks["Rahul"], get() never
 # crashes on a missing key - it simply returns None instead.
-print(marks["Tanmay"]) # Accessing value using key
+print("Value for 'Tanmay' after update:", marks["Tanmay"]) # Accessing value using key
 
 marks.get("Rahul2") # this will return None as Rahul2 is not present in the dictionary
 # "Rahul2" is not a key, so get() quietly returns None (no error).

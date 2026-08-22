@@ -36,9 +36,11 @@ int main()
     numbers[size-1]=temp;
 
     /* After rotation, {10,20,30,40,50} becomes {20,30,40,50,10}. */
+    cout << "\n--- Array After Left Rotation ---" << endl;
+
     for (int i = 0; i < size; i++)
     {
-        cout<<numbers[i]<<endl;
+        cout << numbers[i] << endl;
     }
 
     return 0;

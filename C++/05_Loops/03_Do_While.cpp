@@ -17,10 +17,12 @@ int main()
 {
     int i = 1;      // Initialize the counter.
 
+    cout << "\n--- Do While Loop Counting ---" << endl;
+
     // Run the body first, THEN ask: is i <= 5? If yes, run again.
 do
 {
-    cout << i << endl;
+    cout << "Count: " << i << endl;
     i++;            // Update the counter so the loop can eventually stop.
 }
 while(i <= 5);

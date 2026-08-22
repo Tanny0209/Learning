@@ -7,7 +7,7 @@
 # The % (modulo) operator divides two numbers and returns the REMAINDER.
 # Example: 10 % 3 = 1 (because 10 = 3*3 + 1, so 1 is left over).
 # This is very common in programming (e.g. checking if a number is even).
-print("\n Remainder")
+print("\n--- Problem 1: Remainder ---")
 a=int(input("Enter number which is to be divided : "))
 b=int(input("Enter number by which first number is to be divided : "))
 
@@ -18,7 +18,7 @@ print("Remainder is : ",c)
 # Average = (sum of all values) / (how many values there are).
 # Note: (d+e+f)/3 gives a float result (e.g. 6.666...). If I used // instead
 # (integer division) it would round down to a whole number.
-print("\n Average")
+print("\n--- Problem 2: Average ---")
 d=int(input("Enter numbers 1 : "))
 e=int(input("Enter numbers 2 : "))
 f=int(input("Enter numbers 3 : "))
@@ -29,7 +29,7 @@ print("Average of three numbers is : ",g)
 # ---------- Problem 3: Square ----------
 # The ** operator raises a number to a power: h**2 means h squared (h*h).
 # For example 5**2 = 25 and 2**3 = 8.
-print("\n Square")
+print("\n--- Problem 3: Square ---")
 h=int(input("Enter number which square is to be found : "))
 i=h**2
 # F-STRING (formatted string): the "f" before the quote means Python will

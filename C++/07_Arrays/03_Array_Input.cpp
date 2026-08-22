@@ -26,14 +26,14 @@ int main()
         cin >> numbers[index];
     }
 
-    cout<<"Numbers are :- \n";
+    cout << "\n--- Numbers Entered By User ---" << endl;
 
     /* OUTPUT LOOP: I traverse the freshly-filled array and print every value.
        Two loops are needed because I must FIRST fill all slots, THEN print
        them - a single loop cannot do both at once. */
     for (int index = 0; index < 5; index++)
     {
-        cout <<numbers[index]<<endl;
+        cout << numbers[index] << endl;
     }
 
 

@@ -10,17 +10,21 @@ using namespace std;
 
 int main()
 {
+    cout << "\n--- Multiplication Table ---" << endl;
+
     // Problem 1: print the multiplication table of a user-chosen number.
     int mul;
     cout << "Enter number which you want table : ";
-    cin>> mul;                  // Get which table to print.
+    cin >> mul;                  // Get which table to print.
 
     // Loop i from 1 to 10 and print "mul * i = result" each time.
     for (int i = 1; i <= 10; i++)
     {
-        cout << mul << " * " << i << " = " << mul*i<<"\n";
+        cout << mul << " * " << i << " = " << mul*i << "\n";
     }
 
+
+    cout << "\n--- Even Number Sum ---" << endl;
 
     // Problem 2: add up every EVEN number from 0 to 100.
     int sum=0;                  // Accumulator: starts at 0.
@@ -35,7 +39,7 @@ int main()
         }
 
     }
-    cout << sum <<endl;         // Print 0+2+4+...+100 = 2550.
+    cout << "Even Number Sum (0 to 100): " << sum << endl;         // Print 0+2+4+...+100 = 2550.
 
     return 0;
 }

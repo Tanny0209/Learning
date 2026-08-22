@@ -41,7 +41,9 @@ int factorial(int n)
 
 int main()
 {
+    cout << "\n--- Recursive Factorial ---" << endl;
+
     // Trace: factorial(5) = 5 * factorial(4)
     //      = 5 * 4 * factorial(3) = ... = 5*4*3*2*1 = 120.
-    cout << factorial(5) << endl;
+    cout << "Factorial of 5: " << factorial(5) << endl;
 }

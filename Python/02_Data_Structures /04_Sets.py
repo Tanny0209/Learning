@@ -10,7 +10,8 @@
 # This makes sets perfect for removing duplicates or membership checks.
 
 s={1,2,3,4,5} # this is a set
-print(s, type(s))
+print("\n--- Creating a Set ---")
+print("Set and its type:", s, type(s))
 # type(s) confirms it is <class 'set'>.
 
 b={} # this will create an empty dictionary, not a set
@@ -18,23 +19,26 @@ b={} # this will create an empty dictionary, not a set
 # common beginner trap - the braces are ambiguous.
 e=set() # this is an empty set
 # To make an empty set I must use the set() constructor with no arguments.
-print(b, type(b))   
-print(e, type(e))
+print("\n--- Empty Dict vs Empty Set ---")
+print("Empty braces {} create:", b, type(b))   
+print("set() creates:", e, type(e))
 
 # Set Methods
 s.add(6) # add an element to the set
 # add() inserts one element. Adding 6 again later would do nothing, because
 # sets reject duplicates silently.
-print(s)
+print("\n--- Set Methods ---")
+print("Set after adding 6:", s)
 
 s1={1,5,18,4}
 s2={23,1,45,7}
 
-print(s1.union(s2)) # union of two sets
+print("\n--- Union and Intersection ---")
+print("Union of s1 and s2:", s1.union(s2)) # union of two sets
 # union() combines BOTH sets into one, keeping only unique values. Result:
 # every element of s1 and s2 with duplicates (like 1) appearing only once.
 # Note: union() does NOT change s1 or s2 - it returns a brand new set.
-print(s1.intersection(s2)) # intersection of two sets
+print("Intersection of s1 and s2:", s1.intersection(s2)) # intersection of two sets
 # intersection() returns only the elements that appear in BOTH sets.
 # Here only 1 is shared, so the result is {1}.
 # If nothing matched, the result would be an empty set().

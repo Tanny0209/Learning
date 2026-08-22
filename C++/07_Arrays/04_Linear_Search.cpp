@@ -29,13 +29,15 @@ int main()
        - If the target appears multiple times, only the FIRST match is printed
          because of "break".
        - If the target is NOT in the array, the loop simply ends and nothing
-         is printed - there is no "not found" message here (an improvement
-         would be a found/not-found flag). */
+          is printed - there is no "not found" message here (an improvement
+          would be a found/not-found flag). */
+    cout << "\n--- Linear Search ---" << endl;
+
     for (int i = 0; i < 5; i++)
     {
         if (marks[i]==target)
         {
-            cout<<"Number found at index "<<i<<endl;
+            cout << "Number found at index " << i << endl;
             break;
         }
     }

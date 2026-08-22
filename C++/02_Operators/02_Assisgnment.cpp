@@ -15,19 +15,21 @@ int main() {
     int a=10,b,c=60;
 
     // "=" copies the VALUE of a (10) into b. a itself is not changed.
+    cout << "\n--- Simple Assignment (=) ---" << endl;
     b=a; // Assignment operator
     a=60; // Overwrite a's previous value (10) with 60.
-    cout<<"Value of a: "<<a<<endl;
-    cout<<"Value of b: "<<b<<endl;
+    cout << "Value of a: " << a << endl;
+    cout << "Value of b: " << b << endl;
 
+    cout << "\n--- Compound Assignment (+= -= *= /=) ---" << endl;
     a+=10; // Shortcut for a = a + 10. a was 60, now becomes 70.
-    cout<<"Value of a after a+=10: "<<a<<endl;
+    cout << "Value of a after a+=10: " << a << endl;
 
     b-=5; // Shortcut for b = b - 5. b was 10, now becomes 5.
-    cout<<"Value of b after b-=5: "<<b<<endl;
+    cout << "Value of b after b-=5: " << b << endl;
 
     a*=2; // Shortcut for a = a * 2. a was 70, now becomes 140.
-    cout<<"Value of a after a*=2: "<<a<<endl;
+    cout << "Value of a after a*=2: " << a << endl;
 
     c/=15; // Shortcut for c = c / 15. c was 60, now becomes 4 (60/15 is an
            // exact integer division, so no truncation issue here).

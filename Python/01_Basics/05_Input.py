@@ -9,6 +9,7 @@
 # Why is the type cast needed? The user's typed "5" is the TEXT '5', not the
 # NUMBER 5. Adding text would CONCATENATE ("5"+"3" = "53"), which is wrong.
 # int(a) converts the text into a real number so math works correctly.
+print("\n--- Input And Type Casting ---")
 a=input("Enter number 1: ")
 b=input("Enter number 2: ")
 
@@ -24,6 +25,7 @@ print("The sum of", a, "and", b, "is", c)
 # input() INSIDE int(), so the variable stores a number right away.
 # int(  input(...)  ) -> the inner function runs first, then the outer one
 # converts its result. Python always evaluates inner parentheses first.
+print("\n--- Type Casting At The Time Of Input ---")
 a=int(input("Enter number 1: "))
 b=int(input("Enter number 2: "))
 # Here a and b are already integers, so no extra cast is needed.

@@ -20,10 +20,12 @@ int main()
        that I have to watch out for.
 
        i goes 0 -> 1 -> 2 -> 3 -> 4, so I visit every element exactly once. */
+    cout << "\n--- Traversing The Array ---" << endl;
+
     for(int i=0;i<5;i++)
     {
         // Inside the loop, "marks[i]" gives the element at the current index.
-        cout<<marks[i]<<endl;
+        cout << marks[i] << endl;
     }
 
     return 0;

@@ -14,11 +14,13 @@ int main()
 {
     vector<int> numbers = {10,20,30,40,50};
 
+    cout << "\n--- Front And Back ---" << endl;
+
     // .front() is a shortcut for numbers[0] -- gives the first element, 10.
-    cout << "First = " << numbers.front() << endl;
+    cout << "First element (front): " << numbers.front() << endl;
 
     // .back() is a shortcut for numbers[size()-1] -- the last element, 50.
-    cout << "Last = " << numbers.back() << endl;
+    cout << "Last element (back): " << numbers.back() << endl;
 
     
     return 0;

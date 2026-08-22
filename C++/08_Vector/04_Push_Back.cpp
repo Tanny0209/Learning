@@ -20,10 +20,13 @@ int main()
     numbers.push_back(30);
 
     // Traverse and print. size() is now 3, so the loop runs 3 times.
+    cout << "\n--- Push Back ---" << endl;
+    cout << "Vector elements after push_back calls: ";
     for(int i = 0; i < numbers.size(); i++)
     {
-        cout << numbers[i] <<endl;
+        cout << numbers[i] << " ";
     }
+    cout << endl;
 
-    return 0;    
+    return 0;
 }
