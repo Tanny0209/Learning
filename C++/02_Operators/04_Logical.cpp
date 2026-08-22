@@ -35,6 +35,7 @@ int main() {
 
     //SHORT-CIRCUIT evaluation, part 1: a<b is TRUE, so to decide the && C++
     // MUST also check c<b. Since c<b is false, the if-branch is skipped.
+    cout << "\n--- Short-Circuit Evaluation ---" << endl;
     if (a < b && c < b) {
         cout << "This will not be printed because the second condition is false." << endl;
     } else {

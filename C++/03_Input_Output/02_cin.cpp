@@ -19,14 +19,16 @@ int main()
     int age; // Will hold the age, an integer
 
     
-    cout << "Enter your fullname :- \n";
+    cout << "\n--- String Input with getline ---" << endl;
+    cout << "Enter your fullname :- ";
     cin.ignore(); // Discards one character from the input buffer. Its usual
                   // job: eat the newline left over by a previous >> so that
                   // getline() below starts fresh instead of reading nothing.
-    getline(cin,name); // Reads a WHOLE line, spaces included, into name.
+    getline(cin, name); // Reads a WHOLE line, spaces included, into name.
 
-    cout<<"Enter your age : ";
-    cin  >>age; // >> reads characters until whitespace and converts them
+    cout << "\n--- Input with >> ---" << endl;
+    cout << "Enter your age : ";
+    cin >> age; // >> reads characters until whitespace and converts them
                 // into an int, storing the result in age.
 
     // MULTIPLE reads in one statement: >> can be chained. The user types two
@@ -34,13 +36,14 @@ int main()
     double salary;
     char grade;
 
-    cout << "\nEnter your salary and grade : ";
+    cout << "Enter your salary and grade : ";
     cin >> salary >> grade;
 
-    cout<< "Your name is "<<name;
-    cout << "\nYour age is "<<age;
-
-    cout << "\nYour Salary is " <<salary <<"\nYour Grade is "<<grade <<endl;
+    cout << "\n--- Displaying Entered Values ---" << endl;
+    cout << "Your name is " << name << endl;
+    cout << "Your age is " << age << endl;
+    cout << "Your Salary is " << salary << endl;
+    cout << "Your Grade is " << grade << endl;
    
     return 0;
 }

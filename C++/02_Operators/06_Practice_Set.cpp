@@ -17,6 +17,7 @@ int main(){
     // PROBLEM 1: Rectangle area = length * breadth (arithmetic with *).
     // cin reads from the keyboard; each >> hands one number to a variable,
     // so the user types two numbers (space-separated) on one line.
+    cout << "\n--- Problem 1: Rectangle Area ---" << endl;
     int length, breadth;
     cout << "Enter length and breadth of rectangle: ";
     cin >> length >> breadth; // first number -> length, second -> breadth
@@ -24,6 +25,7 @@ int main(){
 
     // PROBLEM 2: Watch pre-increment vs post-increment on user input.
     // Integer
+    cout << "\n--- Problem 2: Pre vs Post Increment ---" << endl;
     int number;
     cout << "Enter an integer: ";
     cin >> number;
@@ -36,6 +38,7 @@ int main(){
 
 
     // PROBLEM 3: Increase a salary by 15%.
+    cout << "\n--- Problem 3: Salary Increment ---" << endl;
     double salary;
     cout << "Enter your salary: ";
     cin >> salary;

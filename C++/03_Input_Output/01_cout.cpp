@@ -14,7 +14,8 @@ int main(){
  // Chained << operators: first a string, then the variable's value.
  // "\n" is the escape sequence for a NEWLINE (moves to the next line).
  // I note that a variable is NOT wrapped in quotes - quotes mean literal text.
- cout << "Age is "<< age << "\n";
+ cout << "\n--- Chained cout Output ---" << endl;
+ cout << "Age is " << age << endl;
  return 0;
 }
 

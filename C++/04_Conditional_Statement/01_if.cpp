@@ -12,13 +12,14 @@ using namespace std;
 int main()
 {
    int age; // Declared but not yet initialized - cin will fill it below.
-   cout<< "Enter Your Age : " ;
-   cin>>age; // Read the user's age from the keyboard.
-   
+   cout << "\n--- If Statement ---" << endl;
+   cout << "Enter Your Age : ";
+   cin >> age; // Read the user's age from the keyboard.
+
    // if statement: the block runs ONLY when the condition evaluates to true.
    if (age>=18) // >= means "greater than or equal to" -> true when 18 or more
    {
-    cout << "You are adult\n";
+     cout << "You are adult" << endl;
    }
    // If age < 18, the block is skipped and the program simply ends.
    // (No else here - nothing happens for minors in this version.)

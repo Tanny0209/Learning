@@ -12,14 +12,15 @@ using namespace std;
 int main()
 {
     int num; // The number to test, filled by cin below.
+    cout << "\n--- Odd or Even Check ---" << endl;
     cout << "Enter number to check odd or even : ";
-    cin >>num; // Store whatever integer the user types.
+    cin >> num; // Store whatever integer the user types.
 
     // num % 2 = the remainder when num is divided by 2 (0 for even, 1 for odd).
     // == 0 compares that remainder to zero -> true means the number is EVEN.
     if(num%2==0)
     {
-        cout << num <<" is even \n";
+        cout << num << " is even" << endl;
     }
 
     // else catches every remaining case: the remainder was NOT 0, so the
@@ -27,7 +28,7 @@ int main()
     // this is the only other possibility.
     else
     {
-        cout << num << " is odd\n";
+        cout << num << " is odd" << endl;
     }
 
     return 0;
