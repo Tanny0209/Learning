@@ -21,6 +21,8 @@ int main()
    {
      cout << "You are adult" << endl;
    }
-   // If age < 18, the block is skipped and the program simply ends.
-   // (No else here - nothing happens for minors in this version.)
+    // If age < 18, the block is skipped and the program simply ends.
+    // (No else here - nothing happens for minors in this version.)
+
+    return 0;
 }

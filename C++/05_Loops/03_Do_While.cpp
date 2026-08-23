@@ -29,4 +29,6 @@ while(i <= 5);
     // Here the loop stops once i becomes 6.
     // I would use a do-while when I need the body to run at least once,
     // e.g. showing a menu before asking the user whether to continue.
+
+    return 0;
 }

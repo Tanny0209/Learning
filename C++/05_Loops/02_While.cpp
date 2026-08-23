@@ -27,4 +27,6 @@ int main ()
     // When i becomes 6, the condition i<=5 is false and the loop exits.
     // A while loop is equivalent to a for loop when the for loop's
     // initialization is written before it and its update inside the body.
+
+    return 0;
 }

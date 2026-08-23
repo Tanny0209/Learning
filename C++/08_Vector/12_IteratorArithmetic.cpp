@@ -33,4 +33,5 @@ int main()
     bool result=itb>ite;
     cout << "Is itb > ite? " << result << endl;
 
+    return 0;
 }

@@ -47,4 +47,5 @@ int main(){
     salary += salary * 0.15; // Incrementing salary by 15%
     cout << "Salary after 15% increment: " << salary << endl;
 
+    return 0;
 }
