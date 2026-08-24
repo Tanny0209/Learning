@@ -120,33 +120,76 @@ void secsmall(vector<int> &v)
     cout << "Second smallest: " << secmin;
 }
 
+void pairInput(vector<pair<int,int>> &v,int size)
+{
+    int first,second;
+
+    for(int i=0;i<size;i++)
+    {
+        cout<<"Enter the roll no of student "<<i+1<<" :- ";
+        cin>>first;
+        cout<<"Enter the marks of student "<<i+1<<" :- ";
+        cin>>second;
+        v.push_back({first,second});
+    }
+
+}
+
+void pairPrint(vector<pair<int,int>> &v)
+{
+    for(int i=0;i<v.size();i++)
+    {
+        cout<<"Roll No :- "<<v[i].first<<" Marks :- "<<v[i].second<<endl;
+    }
+}
+
+void mostmarks(vector<pair<int,int>> &v)
+{
+    int max=v[0].second;
+    int roll=v[0].first;
+
+    for(int i=1;i<v.size();i++)
+    {
+        if(v[i].second>max)
+        {
+            max=v[i].second;
+            roll=v[i].first;
+        }
+    }
+    cout<<"\nStudent with Roll No "<<roll<<" has the most marks :- "<<max;
+}
+
 int main() {
 
     int size;
     vector<int> numbers;
+    vector<pair<int,int>> marks;
     cout<<"How many Elements you need to add :- ";
     cin>>size;
-    takeVector(numbers,size);
-    printvector(numbers);
-    greatest(numbers);
+    // takeVector(numbers,size);
+    // printvector(numbers);
+    // greatest(numbers);
 
-    int number;
-    cout<<"\nEnter the number to check how many numbers are greater than it :- ";
-    cin>>number;
-    greatercount(numbers,number);
+    // int number;
+    // cout<<"\nEnter the number to check how many numbers are greater than it :- ";
+    // cin>>number;
+    // greatercount(numbers,number);
 
-    maxmindiff(numbers);
+    // maxmindiff(numbers);
 
-    rmconsdup(numbers);
-    printvector(numbers);
+    // rmconsdup(numbers);
+    // printvector(numbers);
 
-    leroby1(numbers);
-    printvector(numbers);
+    // leroby1(numbers);
+    // printvector(numbers);
 
-    riroby1(numbers);
-    printvector(numbers);
+    // riroby1(numbers);
+    // printvector(numbers);
 
-    secsmall(numbers);
+    // secsmall(numbers);
 
+    pairInput(marks,size);
+    pairPrint(marks);
+    mostmarks(marks);
     return 0;
 }
